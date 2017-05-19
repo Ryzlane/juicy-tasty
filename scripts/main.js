@@ -1,1 +1,1 @@
-coucou
+console.log('bonjour');
