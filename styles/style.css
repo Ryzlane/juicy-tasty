@@ -1,4 +1,29 @@
-* {
-  color: #fcd41e; }
+nav#mainNav {
+  background: #9d2373; }
+  nav#mainNav ul.menu {
+    height: 40px;
+    margin-top: 0; }
+    nav#mainNav ul.menu li {
+      text-align: center;
+      list-style: none;
+      display: inline-block; }
+    nav#mainNav ul.menu img {
+      height: 100px; }
+    nav#mainNav ul.menu a {
+      text-decoration: none;
+      color: #ffffff;
+      padding: 40px 30px;
+      text-transform: uppercase;
+      transition: all 0.5s linear; }
+    nav#mainNav ul.menu a:hover {
+      background: #ffffff;
+      color: #9d2373; }
+
+@font-face {
+  font-family: 'ke_aloha';
+  src: url("ke_aloha.ttf"); }
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif; }
 
 /*# sourceMappingURL=style.css.map */
