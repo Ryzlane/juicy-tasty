@@ -1,0 +1,27 @@
+nav#mainMenu {
+  background: $primary-color;
+  ul.menu {
+    width: 100%;
+    height: 40px;
+    margin-top: 0;
+    li {
+      text-align: center;
+      list-style: none;
+      display: inline-block;
+    }
+    img {
+      height: 45px;
+    }
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      padding: 25px 30px;
+      text-transform: uppercase;
+      transition: all 0.5s linear;
+    }
+     a:hover {
+      background: #ffffff;
+      color: $primary-color;
+    }
+  }
+}

@@ -3,4 +3,18 @@
 @import "config";
 
 @import "footer/footer";
-@import "header/header";
+@import "header/header-menu";
+
+// LINK OF THE ADDED FONT
+
+@font-face {
+    font-family: 'ke_aloha';
+    src: url('ke_aloha.ttf');
+}
+
+// PRINCIPAL PARAMETERS
+
+body{
+  margin: 0;
+  font-family:"Open Sans", sans-serif;
+}
