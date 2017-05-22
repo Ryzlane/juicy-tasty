@@ -1,7 +1,7 @@
 .headerimg {
   background: url("../images/header.jpg");
   width: 100%;
-  height: 600px;
+  height: 550px;
   background-size: cover;
   position: relative; }
   .headerimg:before {
@@ -35,13 +35,13 @@ nav {
 
 .top-bar ul {
   background-color: #9d2373; }
-
-.top-bar ul li {
-  padding: 0px 40px 0px 40px; }
-
-.top-bar ul li a {
-  text-decoration: none;
-  color: white; }
+  .top-bar ul li {
+    padding: 0px 40px 0px 40px; }
+    .top-bar ul li a {
+      text-decoration: none;
+      color: white; }
+      .top-bar ul li a:hover {
+        color: #9d2373; }
 
 .title-bar {
   background-color: #9d2373; }
@@ -54,11 +54,21 @@ a {
   color: #ffffff;
   padding: 40px 30px;
   text-transform: uppercase;
-  transition: all 0.5s linear; }
+  transition: all 0.3s ease; }
+  a:hover {
+    background: #ffffff;
+    color: #9d2373; }
 
-a:hover {
-  background: #ffffff;
-  color: #9d2373; }
+.headerimg {
+  padding-top: 100px;
+  text-align: center; }
+  .headerimg h1 {
+    margin: 0 auto;
+    display: inline;
+    color: #fff;
+    background: #9d2373;
+    border-radius: 3px;
+    padding: 2px 20px; }
 
 figure {
   margin-top: 50px;
@@ -109,6 +119,16 @@ section#main {
   src: url("../ke_aloha.ttf"); }
 body {
   margin: 0;
-  font-family: "Open Sans", roboto, arial, sans-serif; }
+  font-family: "Open Sans", roboto, arial, sans-serif;
+  background: url("../images/pattern.png");
+  background-repeat: repeat; }
+  body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95); }
 
 /*# sourceMappingURL=style.css.map */

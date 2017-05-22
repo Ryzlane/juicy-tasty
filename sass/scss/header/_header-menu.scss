@@ -1,20 +1,22 @@
 .headerimg{
   background: url("../images/header.jpg");
   width:100%;
-  height:600px;
+  height:550px;
   background-size: cover;
   position: relative;
+
   &:before {
-  content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(157, 35, 115, .15);
-	opacity: .6;
+    content: '';
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	background: rgba(157, 35, 115, .15);
+  	opacity: .6;
+  }
 }
-}
+
 .logo{
   position: absolute;
   width:100px;
@@ -30,39 +32,47 @@ nav{
   width:100%;
   z-index:250;
 }
+
 .top-bar{
   background-color: #9d2373;
   padding: 0px;
   z-index:1000;
-
-
 }
+
 .top-bar ul{
   background-color: #9d2373;
-}
-.top-bar ul li{
-  padding: 0px 40px 0px 40px;
 
+  li{
+    padding: 0px 40px 0px 40px;
 
+    a {
+      text-decoration: none;
+      color:white;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
 }
-.top-bar ul li a{
-  text-decoration: none;
-  color:white;
-}
+
 .title-bar{
   background-color: #9d2373;
 }
+
 .menu-icon{
   float:right;
 }
+
 a {
-      text-decoration: none;
-      color: #ffffff;
-      padding: 40px 30px;
-      text-transform: uppercase;
-      transition: all 0.5s linear;
-    }
-a:hover {
-      background: #ffffff;
-      color: $primary-color;
-    }
+  text-decoration: none;
+  color: #ffffff;
+  padding: 40px 30px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #ffffff;
+    color: $primary-color;
+  }
+}
