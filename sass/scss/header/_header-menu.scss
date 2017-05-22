@@ -1,15 +1,24 @@
 .headerimg{
-  background-image: url("http://lorempixel.com/400/300/sports/");
+  background: url("../images/header.jpg");
   width:100%;
-  height:500px;
+  height:600px;
   background-size: cover;
   position: relative;
-  
+  &:before {
+  content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(157, 35, 115, .15);
+	opacity: .6;
+}
 }
 .logo{
   position: absolute;
-  height: 70px;
   width:100px;
+  height: auto;
   left:10%;
   top:0%;
   z-index:300;
@@ -25,15 +34,15 @@ nav{
   background-color: #9d2373;
   padding: 0px;
   z-index:1000;
-  
-  
+
+
 }
 .top-bar ul{
   background-color: #9d2373;
 }
 .top-bar ul li{
   padding: 0px 40px 0px 40px;
-  
+
 
 }
 .top-bar ul li a{
