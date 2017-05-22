@@ -4,17 +4,19 @@
 
 @import "footer/footer";
 @import "header/header-menu";
+@import "landing/figures";
+@import "landing/landing";
 
 // LINK OF THE ADDED FONT
 
 @font-face {
-    font-family: 'ke_aloha';
-    src: url('ke_aloha.ttf');
+  font-family: 'ke_aloha';
+  src: url('ke_aloha.ttf');
 }
 
 // PRINCIPAL PARAMETERS
 
 body{
   margin: 0;
-  font-family:"Open Sans", sans-serif;
+  font-family:"Open Sans", roboto, arial, sans-serif;
 }

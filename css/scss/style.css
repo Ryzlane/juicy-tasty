@@ -20,7 +20,6 @@ nav#mainNav {
       color: #9d2373; }
 
 figure {
-  margin-top: 50px;
   height: 330px;
   width: 400px;
   position: relative; }
@@ -59,9 +58,6 @@ figure {
       left: -25px; }
     figure:nth-of-type(even)::after {
       left: -40px; }
-
-section#main {
-  padding-top: 100px; }
 
 @font-face {
   font-family: 'ke_aloha';
