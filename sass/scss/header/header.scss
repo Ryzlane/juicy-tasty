@@ -1,5 +1,5 @@
 .headerimg {
-  padding-top: 100px;
+  padding-top: 180px;
   text-align: center;
 
   h1 {
@@ -9,5 +9,20 @@
     background: $primary-color;
     border-radius: 3px;
     padding: 2px 20px;
+    z-index: 100;
+    // makes z-index work
+    position: relative;
+  }
+
+  h2 {
+    margin-top: 20px;
+    font-family: 'ke aloha', cursive, arial;
+    font-size: 54px;
+    color: #fff;
+    text-shadow: 3px black;
+    text-shadow: 0 0 14px rgba(0,0, 0, .85);
+    z-index: 100;
+    // makes z-index work
+    position: relative;
   }
 }

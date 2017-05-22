@@ -15,18 +15,19 @@
     opacity: .6; }
 
 .logo {
-  position: absolute;
+  position: fixed;
   width: 100px;
   height: auto;
-  left: 10%;
-  top: 0%;
+  left: 50px;
+  top: 0;
   z-index: 300; }
 
 nav {
   position: absolute;
   top: 100%;
   width: 100%;
-  z-index: 250; }
+  z-index: 250;
+  border-bottom: 3px solid #fcd41e; }
 
 .top-bar {
   background-color: #9d2373;
@@ -60,7 +61,7 @@ a {
     color: #9d2373; }
 
 .headerimg {
-  padding-top: 100px;
+  padding-top: 180px;
   text-align: center; }
   .headerimg h1 {
     margin: 0 auto;
@@ -68,7 +69,18 @@ a {
     color: #fff;
     background: #9d2373;
     border-radius: 3px;
-    padding: 2px 20px; }
+    padding: 2px 20px;
+    z-index: 100;
+    position: relative; }
+  .headerimg h2 {
+    margin-top: 20px;
+    font-family: 'ke aloha', cursive, arial;
+    font-size: 54px;
+    color: #fff;
+    text-shadow: 3px black;
+    text-shadow: 0 0 14px rgba(0, 0, 0, 0.85);
+    z-index: 100;
+    position: relative; }
 
 figure {
   margin-top: 50px;
@@ -119,9 +131,10 @@ section#main {
   src: url("../ke_aloha.ttf"); }
 body {
   margin: 0;
-  font-family: "Open Sans", roboto, arial, sans-serif;
+  font-family: "open sans", roboto, arial, sans-serif;
   background: url("../images/pattern.png");
-  background-repeat: repeat; }
+  background-repeat: repeat;
+  background-size: 280px 280px; }
   body:before {
     content: '';
     position: fixed;

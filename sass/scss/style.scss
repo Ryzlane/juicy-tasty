@@ -19,9 +19,10 @@
 
 body{
   margin: 0;
-  font-family:"Open Sans", roboto, arial, sans-serif;
+  font-family: "open sans", roboto, arial, sans-serif;
   background: url('../images/pattern.png');
   background-repeat: repeat;
+  background-size: 280px 280px;
 
   &:before {
     content: '';
