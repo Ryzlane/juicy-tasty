@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juicy&Tasty - Accueil</title>
     <link rel="stylesheet" href="styles/foundation.min.css">
-  <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-  <header id="header">
-    <nav id="mainNav" class="columns small-12">
-      <ul class="menu">
-        <!--<li class="columns medium-1">
-          <img src="images/logo.jpg" alt="Logo">
-        </li>-->
-        <li class="columns medium-3">
-          <a href="#" title="Infos pratiques">Infos pratiques</a>
-        </li>
-        <li class="columns medium-3">
-          <a href="#" title="Notre histoire">Notre histoire</a>
-        </li>
-        <li class="columns medium-3">
-          <a href="#" title="Nos valeurs">Nos valeurs</a>
-        </li>
-        <li class="columns medium-3">
-          <a href="#" title="Le menu">Le menu</a>
-        </li>
-      </ul>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+   
+   
+   <header>
+   <div class="headerimg">
+   <img src="images/logo.jpg" class="logo" alt="logoJUICY" />
+   <nav>
+    <div class="title-bar" data-responsive-toggle="hamburgernav" data-hide-for="medium">
+      <button class="menu-icon right" type="button" data-toggle="hamburgernav"></button>
+      <div class="title-bar-title"></div>
+    </div>
+    <div class="top-bar" id="hamburgernav">
+      <div class="top-bar-right">
+        <ul class="vertical medium-horizontal menu" data-dropdown-menu>
+          <li><a href="#">INFOS PRATIQUES</a></li>
+          <li><a href="#">NOTRE HISTOIRE</a></li>
+          <li><a href="#">NOS VALEURS</a></li>
+          <li><a href="#">LE MENU</a></li>
+        </ul>    
+      </div>
+    </div>
     </nav>
-  </header>
-  <section id="main">
-    <figure>
-      <p>Oh oui Greg il la sort</p>
-      <img src="http://lorempixel.com/400/300/sports/" alt="img" />
-    </figure>
-    <figure>
-      <p>Haaan ça suffit</p>
-      <img src="http://lorempixel.com/400/300/sports/" alt="img" />
-    </figure>
-  </section>
+    </div>
+     </header>
+    <section id="main">
+      <figure>
+        <p>Oh oui Greg il la sort</p>
+        <img src="http://lorempixel.com/400/300/sports/" alt="img" />
+      </figure>
+      <figure>
+        <p>Haaan ça suffit</p>
+        <img src="http://lorempixel.com/400/300/sports/" alt="img" />
+      </figure>
+    </section>
+   
 
-  <script src="scripts/main.js"></script>
-</body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
+
+    <script> $(document).foundation() </script>
+
+  </body>
 </html>

@@ -1,23 +1,63 @@
-nav#mainNav {
-  background: #9d2373; }
-  nav#mainNav ul.menu {
-    height: 40px;
-    margin-top: 0; }
-    nav#mainNav ul.menu li {
-      text-align: center;
-      list-style: none;
-      display: inline-block; }
-    nav#mainNav ul.menu img {
-      height: 100px; }
-    nav#mainNav ul.menu a {
+.headerimg{
+  background-image: url("http://lorempixel.com/400/300/sports/");
+  width:100%;
+  height:500px;
+  background-size: cover;
+  position: relative;
+  
+}
+.logo{
+  position: absolute;
+  height: 70px;
+  width:100px;
+  left:10%;
+  top:0%;
+  z-index:300;
+}
+
+nav{
+  position:absolute;
+  top:100%;
+  width:100%;
+  z-index:250;
+}
+.top-bar{
+  background-color: #9d2373;
+  padding: 0px;
+  z-index:1000;
+  
+  
+}
+.top-bar ul{
+  background-color: #9d2373;
+}
+.top-bar ul li{
+  padding: 0px 40px 0px 40px;
+  
+
+}
+.top-bar ul li a{
+  text-decoration: none;
+  color:white;
+}
+.title-bar{
+  background-color: #9d2373;
+}
+.menu-icon{
+  float:right;
+}
+a {
       text-decoration: none;
       color: #ffffff;
       padding: 40px 30px;
       text-transform: uppercase;
-      transition: all 0.5s linear; }
-    nav#mainNav ul.menu a:hover {
+      transition: all 0.5s linear;
+    }
+a:hover {
       background: #ffffff;
-      color: #9d2373; }
+      color: $primary-color;
+    }
+
 
 figure {
   margin-top: 50px;
