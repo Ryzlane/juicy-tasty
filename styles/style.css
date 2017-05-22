@@ -81,6 +81,74 @@ a {
     text-shadow: 0 0 14px rgba(0, 0, 0, 0.85);
     z-index: 100;
     position: relative; }
+/*FOOTER*/
+footer{
+  margin-top:90px;
+}
+.footerimg{
+  background-image: url("http://lorempixel.com/400/300/sports/");
+  width:100%;
+  height:240px;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  
+  
+}
+.footerimg .row{
+ padding-top: 90px;
+  
+}
+.footerbutton{
+ margin:10px;
+}
+.footerbutton div{
+  color:#9d2373;
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+  margin: auto;
+  width: 250px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 13px;
+  font-weight: 900;
+  
+  
+}
+.footertext{
+  margin-top:50px;
+  
+  
+  
+  
+}
+.footertext .columns div{
+  color:black;
+  font-weight: 500;
+  font-size: 12px;
+  width: 190px;
+  margin: auto;
+  padding-left: 30px;
+ 
+  
+ 
+  
+}
+
+
+.footertext .columns div:first-child{
+  color:#9d2373;
+  font-weight: 900;
+  font-size: 14px;
+  
+  
+ 
+  
+}
+
 
 figure {
   margin-top: 50px;
