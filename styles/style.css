@@ -188,6 +188,41 @@ figure {
 section#main {
   padding-top: 100px; }
 
+.values p:first-child {
+  color: black;
+  font-family: 'ke aloha';
+  text-align: center;
+  width: 390px;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 30px; }
+.values .row {
+  margin-top: 50px;
+  background-color: none; }
+.values .columns {
+  text-align: center; }
+  .values .columns img {
+    margin: auto; }
+  .values .columns h3 {
+    margin-top: 20px;
+    color: #9d2373;
+    font-family: "ke aloha";
+    text-align: center; }
+  .values .columns p {
+    margin: auto;
+    font-size: 12px; }
+.values .valueslider {
+  background-color: #fcd41e;
+  margin-top: 50px;
+  height: 200px; }
+  .values .valueslider div {
+    height: 200px;
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    border-radius: 4px; }
+
 @font-face {
   font-family: 'ke aloha';
   src: url("../sass/fonts/ke_aloha.ttf"); }
