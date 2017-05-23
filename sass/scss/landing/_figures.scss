@@ -54,12 +54,11 @@ figure {
   }
 
   &:nth-of-type(even) {
-    margin-left: 80px;
     p {
       left: -25px;
     }
 
-    &::after {
+    .frame {
       left: -40px;
     }
 
