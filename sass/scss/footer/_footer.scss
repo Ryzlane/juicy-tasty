@@ -1,24 +1,35 @@
 // footer
 footer{
-  margin-top:90px;
+  margin-top: 90px;
   background-color: #fff;
 }
-.footerimg{
-  background-image: url("http://lorempixel.com/400/300/sports/");
+
+.footerimg {
+  background-image: url("../images/salades-vegan.jpg");
   width:100%;
   height:240px;
   background-size: cover;
   position: relative;
   text-align: center;
 
-
+  &:before {
+    z-index: 0;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 .footerimg .row{
- padding-top: 90px;
+  padding-top: 90px;
+  position: relative;
 
 }
 .footerbutton{
- margin:10px;
+  margin:10px;
 }
 .footerbutton div{
   color:#9d2373;
