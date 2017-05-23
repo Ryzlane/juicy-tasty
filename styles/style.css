@@ -148,7 +148,19 @@ figure {
   margin-top: 50px;
   height: 330px;
   width: 400px;
-  position: relative; }
+  position: relative;
+  box-sizing: content-box; }
+  figure .frame {
+    padding: 4px 0;
+    border: 2px solid #9d2373;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: -25px;
+    left: 41px;
+    z-index: 0;
+    border-radius: 3px; }
   figure img {
     display: block;
     z-index: 200;
@@ -159,31 +171,18 @@ figure {
     line-height: 30px;
     background-color: #fcd41e;
     position: absolute;
-    bottom: -15px;
-    left: 25px;
+    top: 30px;
+    left: 30px;
     border-top: 260px solid #fcd41e;
     width: 100%;
     text-align: center;
     z-index: 100;
     border-radius: 3px; }
-  figure::after {
-    content: '';
-    padding: 4px 0;
-    border: 2px solid #9d2373;
-    height: 87%;
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    top: -20px;
-    left: 40px;
-    z-index: 0;
-    border-radius: 3px; }
-  figure:nth-of-type(even) {
-    margin-left: 80px; }
-    figure:nth-of-type(even) p {
-      left: -25px; }
-    figure:nth-of-type(even)::after {
-      left: -40px; }
+
+#main .row:nth-of-type(even) p {
+  left: -30px; }
+#main .row:nth-of-type(even) .frame {
+  left: -41px; }
 
 section#main {
   padding-top: 100px; }
@@ -231,7 +230,8 @@ body {
   font-family: "open sans", roboto, arial, sans-serif;
   background: url("../images/pattern.png");
   background-repeat: repeat;
-  background-size: 280px 280px; }
+  background-size: 280px 280px;
+  overflow-x: hidden; }
   body:before {
     content: '';
     position: fixed;

@@ -1,4 +1,4 @@
-var navbar, navbarOffset;
+var navbar, navbarOffset, figcaptions, previewImages, frames, borderHeight;
 if (document.body.clientWidth < 640) {
   navbar = document.querySelector('.title-bar');
 } else {
@@ -14,3 +14,24 @@ document.addEventListener('scroll', function() {
     navbar.classList.remove('sticky');
   }
 });
+
+figcaptions = document.querySelectorAll('#main figure p');
+frames = document.querySelectorAll('#main figure .frame');
+previewImages = document.querySelectorAll('#main figure img');
+
+updateFigures();
+window.onresize = function() {
+  updateFigures();
+}
+
+function updateFigures() {
+  for (i=0; i<figcaptions.length; i++) {
+    // Position figcaptions
+    figcaptions[i].style.width = '0' + previewImages[i].offsetWidth + 'px';
+    borderHeight = previewImages[i].offsetHeight - 30;
+    figcaptions[i].style.borderTopWidth = borderHeight + 'px';
+    // Set frame dimensions
+    frames[i].style.width = '0' + previewImages[i].offsetWidth + 'px';
+    frames[i].style.height = '0' + previewImages[i].offsetHeight + 'px';
+  }
+}
