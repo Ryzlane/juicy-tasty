@@ -18,10 +18,9 @@ footer {
     left: 0;
     right: 0;
     bottom: 0; }
-
-.footerimg .row {
-  padding-top: 90px;
-  position: relative; }
+  .footerimg .row {
+    padding-top: 90px;
+    position: relative; }
 
 .footerbutton {
   margin: 10px; }

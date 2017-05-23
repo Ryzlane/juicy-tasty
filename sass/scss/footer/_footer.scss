@@ -21,12 +21,11 @@ footer {
     right: 0;
     bottom: 0;
   }
-}
 
-.footerimg .row{
-  padding-top: 90px;
-  position: relative;
-
+  .row {
+    padding-top: 90px;
+    position: relative;
+  }
 }
 
 .footerbutton{
@@ -34,7 +33,7 @@ footer {
 }
 
 .footerbutton div{
-  color:#9d2373;
+  color: $primary-color;
   background-color: white;
   border-radius: 4px;
   text-align: center;
