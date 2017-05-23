@@ -22,15 +22,14 @@ footer {
     padding-top: 90px;
     position: relative; }
 
-.footerbutton {
-  margin: 10px; }
-
-.footerbutton div {
+a.footerbutton {
+  display: block;
+  text-transform: uppercase;
   color: #9d2373;
   background-color: white;
   border-radius: 4px;
   text-align: center;
-  margin: auto;
+  margin: 20px auto 0 auto;
   width: 250px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -190,8 +189,8 @@ section#main {
   padding-top: 100px; }
 
 @font-face {
-  font-family: 'ke_aloha';
-  src: url("../ke_aloha.ttf"); }
+  font-family: 'ke aloha';
+  src: url("../sass/fonts/ke_aloha.ttf"); }
 body {
   margin: 0;
   font-family: "open sans", roboto, arial, sans-serif;
