@@ -4,6 +4,7 @@ figure {
   width: 400px;
   position: relative;
   box-sizing: content-box;
+  margin-top: 10px;
 
   .frame {
     padding: 4px 0;
@@ -42,7 +43,7 @@ figure {
 }
 
 #main .row:nth-of-type(even) {
-  
+
   p {
     left: -30px;
   }
