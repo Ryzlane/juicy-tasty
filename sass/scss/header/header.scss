@@ -15,8 +15,9 @@
   	right: 0;
   	bottom: 0;
   	left: 0;
-  	background: rgba(157, 35, 115, .15);
-  	opacity: .6;
+  	// background: rgba(157, 35, 115, .15);
+    background: #95808F;
+  	opacity: .4;
   }
 
   h1 {
@@ -36,7 +37,7 @@
     font-family: 'ke aloha', cursive, arial;
     font-size: 54px;
     color: #fff;
-    text-shadow: 0 0 14px rgba(0,0, 0, .85);
+    text-shadow: 0 0 14px rgba(0,0, 0, .75);
     z-index: 100;
     // makes z-index work
     position: relative;
