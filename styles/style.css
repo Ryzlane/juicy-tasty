@@ -178,10 +178,11 @@ figure {
     text-align: center;
     z-index: 100;
     border-radius: 3px; }
-  figure:nth-of-type(even) p {
-    left: -25px; }
-  figure:nth-of-type(even) .frame {
-    left: -40px; }
+
+#main .row:nth-of-type(even) p {
+  left: -30px; }
+#main .row:nth-of-type(even) .frame {
+  left: -41px; }
 
 section#main {
   padding-top: 100px; }
