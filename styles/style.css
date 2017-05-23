@@ -111,6 +111,7 @@ a {
     opacity: .4; }
   .headerimg h1 {
     margin: 0 auto;
+    font-family: 'open sans';
     display: inline;
     color: #fff;
     background: #9d2373;
@@ -123,7 +124,7 @@ a {
     font-family: 'ke aloha', cursive, arial;
     font-size: 54px;
     color: #fff;
-    text-shadow: 0 0 14px rgba(0, 0, 0, 0.75);
+    text-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
     z-index: 100;
     position: relative; }
 
