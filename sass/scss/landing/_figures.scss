@@ -1,10 +1,9 @@
 figure {
-  margin-top: 50px;
   height: 330px;
   width: 400px;
   position: relative;
   box-sizing: content-box;
-  margin-top: 10px;
+  margin-top: 50px;
 
   .frame {
     padding: 4px 0;
@@ -20,11 +19,13 @@ figure {
   }
 
   img {
-    display: block;
+    //display: block;
     z-index: 200;
+    border-radius: 3px;
     /* makes z-index work */
     position: relative;
-    border-radius: 3px;
+    /* makes room for the frames */
+    width: calc(100% - 54px);
   }
 
   p {
