@@ -45,12 +45,16 @@ figure {
 
 #main .row:nth-of-type(even) {
 
-  p {
-    left: -30px;
-  }
+  figure {
+    transform: translateX(54px);
 
-  .frame {
-    left: -41px;
+    p {
+      left: -9px;
+    }
+
+    .frame {
+      left: -25px;
+    }
   }
 
 }

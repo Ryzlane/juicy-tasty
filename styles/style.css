@@ -181,10 +181,12 @@ figure {
     z-index: 100;
     border-radius: 3px; }
 
-#main .row:nth-of-type(even) p {
-  left: -30px; }
-#main .row:nth-of-type(even) .frame {
-  left: -41px; }
+#main .row:nth-of-type(even) figure {
+  transform: translateX(54px); }
+  #main .row:nth-of-type(even) figure p {
+    left: -9px; }
+  #main .row:nth-of-type(even) figure .frame {
+    left: -25px; }
 
 section#main {
   padding-top: 100px; }
