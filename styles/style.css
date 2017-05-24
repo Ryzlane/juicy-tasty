@@ -55,12 +55,19 @@ a.footerbutton {
   font-size: 14px; }
 
 .logo {
-  position: fixed;
-  width: 100px;
+  position: absolute;
+  width: 70px;
   height: auto;
-  left: 50px;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 300; }
+  @media screen and (min-width: 39.9375em) {
+    .logo {
+      width: 100px;
+      position: fixed;
+      left: 50px;
+      transform: translateX(0); } }
 
 nav {
   position: absolute;
@@ -101,16 +108,21 @@ a {
     background: #ffffff;
     color: #9d2373; }
 
-.headerimg {
+.headerMain {
   background: url("../images/repas-vegan-complet.jpg");
   width: 100%;
-  height: 550px;
+  height: 400px;
   background-size: cover;
   background-position: center;
   position: relative;
   padding-top: 180px;
   text-align: center; }
-  .headerimg:before {
+  @media screen and (min-width: 39.9375em) {
+    .headerMain {
+      height: 550px; }
+      .headerMain br {
+        display: none; } }
+  .headerMain:before {
     content: '';
     position: absolute;
     top: 0;
@@ -119,7 +131,7 @@ a {
     left: 0;
     background: #95808F;
     opacity: .4; }
-  .headerimg h1 {
+  .headerMain h1 {
     margin: 0 auto;
     font-family: 'open sans';
     display: inline;
@@ -129,7 +141,7 @@ a {
     padding: 2px 20px;
     z-index: 100;
     position: relative; }
-  .headerimg h2 {
+  .headerMain h2 {
     margin-top: 20px;
     font-family: 'ke aloha', cursive, arial;
     font-size: 54px;
