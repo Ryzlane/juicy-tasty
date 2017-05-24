@@ -1,3 +1,17 @@
 section#main {
   padding-top: 100px;
+
+  h3 {
+    font-family: 'Ke Aloha';
+  	font-size: 40px;
+  	letter-spacing: 1.7px;
+  	color: $primary-color;
+  }
+
+  p.teaser {
+    font-family: 'Open Sans';
+  	font-size: 16px;
+  	line-height: 1.94;
+  	letter-spacing: 0.7px;
+  }
 }

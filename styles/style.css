@@ -182,7 +182,7 @@ figure {
     border-radius: 3px; }
 
 #main .row:nth-of-type(even) figure {
-  transform: translateX(54px); }
+  transform: translateX(34px); }
   #main .row:nth-of-type(even) figure p {
     left: -9px; }
   #main .row:nth-of-type(even) figure .frame {
@@ -190,6 +190,16 @@ figure {
 
 section#main {
   padding-top: 100px; }
+  section#main h3 {
+    font-family: 'Ke Aloha';
+    font-size: 40px;
+    letter-spacing: 1.7px;
+    color: #9d2373; }
+  section#main p.teaser {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 1.94;
+    letter-spacing: 0.7px; }
 
 .values p:first-child {
   color: black;
