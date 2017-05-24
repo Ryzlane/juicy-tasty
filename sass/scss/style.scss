@@ -29,6 +29,7 @@ html {
     max-width: 100%;
     overflow-x: hidden;
 
+    // White overlay to make pattern clearer
     &:before {
       content: '';
       position: fixed;

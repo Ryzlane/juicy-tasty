@@ -5,7 +5,7 @@ navbarOffset = navbar.getBoundingClientRect().top - (navbar.clientHeight);
 
 // make navbar sticky after scroll
 document.addEventListener('scroll', function() {
-  if (window.pageYOffset + 8 > navbarOffset) {
+  if (window.pageYOffset + 11 > navbarOffset) {
     navbar.classList.add('sticky');
   } else {
     navbar.classList.remove('sticky');

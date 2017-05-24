@@ -37,9 +37,12 @@
     background: $primary-color;
     border-radius: 3px;
     padding: 2px 20px;
-    z-index: 100;
+    z-index: 70%;
     // makes z-index work
     position: relative;
+    @media screen and (min-width: $small-breakpoint) {
+      width: auto;
+    }
   }
 
   h2 {

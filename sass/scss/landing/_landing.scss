@@ -1,5 +1,8 @@
 section#main {
   padding-top: 100px;
+  @media screen and (min-width: $small-breakpoint) and (max-width: $large-breakpoint) {
+    transform: translateX(-3.5%);
+  }
 
   h3 {
     font-family: 'Ke Aloha';
