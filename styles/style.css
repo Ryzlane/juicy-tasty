@@ -146,11 +146,11 @@ a {
   z-index: 0; }
 
 figure {
-  height: 330px;
   width: 400px;
   position: relative;
   box-sizing: content-box;
-  margin-top: 50px; }
+  margin-top: 50px;
+  margin-bottom: 70px; }
   figure .frame {
     padding: 4px 0;
     border: 2px solid #9d2373;
