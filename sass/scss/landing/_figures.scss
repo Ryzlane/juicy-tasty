@@ -5,6 +5,7 @@ figure {
   box-sizing: content-box;
   margin-top: 50px;
   margin-bottom: 70px;
+  transform: translateX(19px);
 
   .frame {
     padding: 4px 0;
@@ -47,7 +48,7 @@ figure {
 #main .row:nth-of-type(even) {
 
   figure {
-    transform: translateX(34px);
+    transform: translateX(54px);
 
     p {
       left: -9px;
