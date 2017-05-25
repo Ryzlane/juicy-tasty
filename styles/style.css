@@ -287,15 +287,23 @@ section#main {
   background-color: #fcd41e;
   margin-top: 50px;
   height: 250px;
-  padding-top: 25px; }
+  padding-top: 25px;
+  position: relative; }
   .values .valueslider div.row {
+    display: block;
+    position: absolute;
     height: 90%;
     background-color: white;
     width: 80%;
     margin: auto;
-    border-radius: 4px; }
-    .values .valueslider div.row img {
-      margin-top: 30px; }
+    border-radius: 4px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -20; }
+    .values .valueslider div.row.activeslide {
+      z-index: 200; }
 
 @font-face {
   font-family: 'ke aloha';
