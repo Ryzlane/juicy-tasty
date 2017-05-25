@@ -24,7 +24,11 @@ footer {
 
   .row {
     padding-top: 90px;
-    position: relative;
+    
+    @media screen and (max-width: $small-breakpoint) {
+  
+    padding-top: 60px;
+  }
   }
 }
 
@@ -59,11 +63,22 @@ a.footerbutton {
   font-size: 12px;
   width: 190px;
   margin: auto;
-  padding-left: 30px;
+  padding-left: 60px;
+   @media screen and (max-width: $small-breakpoint) {
+  
+    padding-left: 30px;
+  }
 }
 
 .footertext .columns div:first-child{
   color:#9d2373;
   font-weight: 900;
   font-size: 14px;
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  .bloc {
+    display:block;
+    clear:both;
+  }
 }
