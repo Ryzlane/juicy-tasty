@@ -3,17 +3,17 @@
 var sliderImgNav=document.querySelectorAll('.slidernav img');
 var currentlyActive=document.querySelector('.activeslide');
 var slides=document.querySelectorAll('.slide')
+
+
+
 for(var i =0; i < sliderImgNav.length;i++)
-
-
-
 {
   sliderImgNav[i].addEventListener(
     'click',
     function(){
       var currentlyActive=document.querySelector('.activeslide');
       currentlyActive.classList.remove('activeslide');
-      slides[this.getAttribute('id')].classList.add('activeslide');
+      slides[this.getAttribute('data-gotoslide')].classList.add('activeslide');
      
     }
 
