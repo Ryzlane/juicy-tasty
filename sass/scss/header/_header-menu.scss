@@ -1,10 +1,19 @@
 .logo{
-  position: fixed;
-  width:100px;
+  position: absolute;
+  width: 70px;
   height: auto;
-  left:50px;
   top:0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index:300;
+
+  @media screen and (min-width: $small-breakpoint) {
+    width:100px;
+    position: fixed;
+    left:50px;
+    transform: translateX(0);
+  }
+  // 770
 }
 
 nav{
@@ -25,11 +34,14 @@ nav{
   background-color: #9d2373;
 
   li{
-    padding: 0px 40px 0px 40px;
+    margin: 0 20px;
 
     a {
       text-decoration: none;
-      color:white;
+      color: white;
+      //padding: 0px 20px 0px 0px;
+      line-height: 34px;
+      padding: 0px 40px 0px 40px;
 
       &:hover {
         color: $primary-color;
@@ -57,5 +69,22 @@ a {
   &:hover {
     background: #ffffff;
     color: $primary-color;
+  }
+}
+
+@media screen and (min-width: $small-breakpoint) and (max-width: 900px) {
+  .top-bar ul li a {
+    padding: 0px 15px 0px 15px;
+  }
+
+  .logo {
+    width: 75px;
+    left: 20px;
+  }
+}
+
+@media screen and (min-width: 740px) and (max-width: 900px) {
+  .top-bar ul li a {
+    padding:0px 15px 0px 35px;
   }
 }

@@ -1,3 +1,20 @@
 section#main {
   padding-top: 100px;
+  @media screen and (min-width: $small-breakpoint) and (max-width: $large-breakpoint) {
+    transform: translateX(-3.5%);
+  }
+
+  h3 {
+    font-family: 'Ke Aloha';
+  	font-size: 40px;
+  	letter-spacing: 1.7px;
+  	color: $primary-color;
+  }
+
+  p.teaser {
+    font-family: 'Open Sans';
+  	font-size: 16px;
+  	line-height: 1.94;
+  	letter-spacing: 0.7px;
+  }
 }

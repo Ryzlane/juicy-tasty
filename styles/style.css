@@ -55,12 +55,19 @@ a.footerbutton {
   font-size: 14px; }
 
 .logo {
-  position: fixed;
-  width: 100px;
+  position: absolute;
+  width: 70px;
   height: auto;
-  left: 50px;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 300; }
+  @media screen and (min-width: 39.9375em) {
+    .logo {
+      width: 100px;
+      position: fixed;
+      left: 50px;
+      transform: translateX(0); } }
 
 nav {
   position: absolute;
@@ -77,10 +84,12 @@ nav {
 .top-bar ul {
   background-color: #9d2373; }
   .top-bar ul li {
-    padding: 0px 40px 0px 40px; }
+    margin: 0 20px; }
     .top-bar ul li a {
       text-decoration: none;
-      color: white; }
+      color: white;
+      line-height: 34px;
+      padding: 0px 40px 0px 40px; }
       .top-bar ul li a:hover {
         color: #9d2373; }
 
@@ -101,15 +110,31 @@ a {
     background: #ffffff;
     color: #9d2373; }
 
-.headerimg {
-  background: url("../images/header.jpg");
+@media screen and (min-width: 39.9375em) and (max-width: 900px) {
+  .top-bar ul li a {
+    padding: 0px 15px 0px 15px; }
+
+  .logo {
+    width: 75px;
+    left: 20px; } }
+@media screen and (min-width: 740px) and (max-width: 900px) {
+  .top-bar ul li a {
+    padding: 0px 15px 0px 35px; } }
+.headerMain {
+  background: url("../images/repas-vegan-complet.jpg");
   width: 100%;
-  height: 550px;
+  height: 400px;
   background-size: cover;
+  background-position: center;
   position: relative;
   padding-top: 180px;
   text-align: center; }
-  .headerimg:before {
+  @media screen and (min-width: 39.9375em) {
+    .headerMain {
+      height: 550px; }
+      .headerMain br {
+        display: none; } }
+  .headerMain:before {
     content: '';
     position: absolute;
     top: 0;
@@ -118,7 +143,7 @@ a {
     left: 0;
     background: #95808F;
     opacity: .4; }
-  .headerimg h1 {
+  .headerMain h1 {
     margin: 0 auto;
     font-family: 'open sans';
     display: inline;
@@ -126,9 +151,12 @@ a {
     background: #9d2373;
     border-radius: 3px;
     padding: 2px 20px;
-    z-index: 100;
+    z-index: 70%;
     position: relative; }
-  .headerimg h2 {
+    @media screen and (min-width: 39.9375em) {
+      .headerMain h1 {
+        width: auto; } }
+  .headerMain h2 {
     margin-top: 20px;
     font-family: 'ke aloha', cursive, arial;
     font-size: 54px;
@@ -145,11 +173,12 @@ a {
   z-index: 0; }
 
 figure {
-  margin-top: 50px;
-  height: 330px;
   width: 400px;
   position: relative;
-  box-sizing: content-box; }
+  box-sizing: content-box;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  transform: translateX(19px); }
   figure .frame {
     padding: 4px 0;
     border: 2px solid #9d2373;
@@ -162,11 +191,12 @@ figure {
     z-index: 0;
     border-radius: 3px; }
   figure img {
-    display: block;
     z-index: 200;
+    border-radius: 3px;
     /* makes z-index work */
     position: relative;
-    border-radius: 3px; }
+    /* makes room for the frames */
+    width: calc(100% - 54px); }
   figure p {
     line-height: 30px;
     background-color: #fcd41e;
@@ -179,13 +209,28 @@ figure {
     z-index: 100;
     border-radius: 3px; }
 
-#main .row:nth-of-type(even) p {
-  left: -30px; }
-#main .row:nth-of-type(even) .frame {
-  left: -41px; }
+#main .row:nth-of-type(even) figure {
+  transform: translateX(54px); }
+  #main .row:nth-of-type(even) figure p {
+    left: -9px; }
+  #main .row:nth-of-type(even) figure .frame {
+    left: -25px; }
 
 section#main {
   padding-top: 100px; }
+  @media screen and (min-width: 39.9375em) and (max-width: 74.9375em) {
+    section#main {
+      transform: translateX(-3.5%); } }
+  section#main h3 {
+    font-family: 'Ke Aloha';
+    font-size: 40px;
+    letter-spacing: 1.7px;
+    color: #9d2373; }
+  section#main p.teaser {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 1.94;
+    letter-spacing: 0.7px; }
 
 .values p:first-child {
   color: black;
@@ -228,21 +273,25 @@ section#main {
 @font-face {
   font-family: 'ke aloha';
   src: url("../sass/fonts/ke_aloha.ttf"); }
-body {
-  margin: 0;
-  font-family: "open sans", roboto, arial, sans-serif;
-  background: url("../images/pattern.png");
-  background-repeat: repeat;
-  background-size: 280px 280px;
+html {
+  max-width: 100%;
   overflow-x: hidden; }
-  body:before {
-    content: '';
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(255, 255, 255, 0.95); }
+  html body {
+    margin: 0;
+    font-family: "open sans", roboto, arial, sans-serif;
+    background: url("../images/pattern.png");
+    background-repeat: repeat;
+    background-size: 280px 280px;
+    max-width: 100%;
+    overflow-x: hidden; }
+    html body:before {
+      content: '';
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95); }
 
 /*# sourceMappingURL=style.css.map */

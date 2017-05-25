@@ -1,9 +1,11 @@
 figure {
-  margin-top: 50px;
-  height: 330px;
+  //height: 330px;
   width: 400px;
   position: relative;
   box-sizing: content-box;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  transform: translateX(19px);
 
   .frame {
     padding: 4px 0;
@@ -19,11 +21,13 @@ figure {
   }
 
   img {
-    display: block;
+    //display: block;
     z-index: 200;
+    border-radius: 3px;
     /* makes z-index work */
     position: relative;
-    border-radius: 3px;
+    /* makes room for the frames */
+    width: calc(100% - 54px);
   }
 
   p {
@@ -42,13 +46,17 @@ figure {
 }
 
 #main .row:nth-of-type(even) {
-  
-  p {
-    left: -30px;
-  }
 
-  .frame {
-    left: -41px;
+  figure {
+    transform: translateX(54px);
+
+    p {
+      left: -9px;
+    }
+
+    .frame {
+      left: -25px;
+    }
   }
 
 }

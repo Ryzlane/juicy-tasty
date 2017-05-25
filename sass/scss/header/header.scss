@@ -1,11 +1,21 @@
-.headerimg {
-  background: url("../images/header.jpg");
+.headerMain {
+  background: url("../images/repas-vegan-complet.jpg");
   width:100%;
-  height:550px;
+  height: 400px;
   background-size: cover;
+  background-position: center;
   position: relative;
   padding-top: 180px;
   text-align: center;
+
+  @media screen and (min-width: $small-breakpoint) {
+    height: 550px;
+
+    // Only show line break on mobile
+    br {
+      display: none;
+    }
+  }
 
   // Filter to darken background image
   &:before {
@@ -27,9 +37,12 @@
     background: $primary-color;
     border-radius: 3px;
     padding: 2px 20px;
-    z-index: 100;
+    z-index: 70%;
     // makes z-index work
     position: relative;
+    @media screen and (min-width: $small-breakpoint) {
+      width: auto;
+    }
   }
 
   h2 {

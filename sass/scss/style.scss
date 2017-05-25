@@ -16,24 +16,29 @@
   src: url('../sass/fonts/ke_aloha.ttf');
 }
 
-// PRINCIPAL PARAMETERS
-
-body{
-  margin: 0;
-  font-family: "open sans", roboto, arial, sans-serif;
-  background: url('../images/pattern.png');
-  background-repeat: repeat;
-  background-size: 280px 280px;
+html {
+  max-width: 100%;
   overflow-x: hidden;
 
-  &:before {
-    content: '';
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(255, 255, 255, .95);
+  body{
+    margin: 0;
+    font-family: "open sans", roboto, arial, sans-serif;
+    background: url('../images/pattern.png');
+    background-repeat: repeat;
+    background-size: 280px 280px;
+    max-width: 100%;
+    overflow-x: hidden;
+
+    // White overlay to make pattern clearer
+    &:before {
+      content: '';
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: rgba(255, 255, 255, .95);
+    }
   }
 }
