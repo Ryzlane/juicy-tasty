@@ -6,6 +6,7 @@ var slides=document.querySelectorAll('.slide')
 for(var i =0; i < sliderImgNav.length;i++)
 
 
+
 {
   sliderImgNav[i].addEventListener(
     'click',
@@ -20,14 +21,7 @@ for(var i =0; i < sliderImgNav.length;i++)
 
 
 
-//SLIDER NAV
 
-$(".values .slidernav .columns img ").click(function(e){
-  var index=$(this).data('gotoslide');
-  ;
-  $( ".slider" ).slick('slickGoTo', index);;
-});
-/////////////////////////////////////////////////////////////////////////
 
 
 var navbar, navbarOffset, figcaptions, previewImages, frames, borderHeight;
@@ -64,5 +58,3 @@ function updateFigures() {
     frames[i].style.height = '0' + previewImages[i].offsetHeight + 'px';
   }
 }
-
-
