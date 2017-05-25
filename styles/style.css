@@ -19,8 +19,10 @@ footer {
     right: 0;
     bottom: 0; }
   .footerimg .row {
-    padding-top: 90px;
-    position: relative; }
+    padding-top: 90px; }
+    @media screen and (max-width: 39.9375em) {
+      .footerimg .row {
+        padding-top: 60px; } }
 
 a.footerbutton {
   display: block;
@@ -47,13 +49,20 @@ a.footerbutton {
   font-size: 12px;
   width: 190px;
   margin: auto;
-  padding-left: 30px; }
+  padding-left: 60px; }
+  @media screen and (max-width: 39.9375em) {
+    .footertext .columns div {
+      padding-left: 30px; } }
 
 .footertext .columns div:first-child {
   color: #9d2373;
   font-weight: 900;
   font-size: 14px; }
 
+@media screen and (max-width: 39.9375em) {
+  .bloc {
+    display: block;
+    clear: both; } }
 .logo {
   position: absolute;
   width: 70px;
@@ -261,7 +270,8 @@ section#main {
   margin-top: 50px;
   background-color: none; }
 .values .columns {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 20px; }
   .values .columns img {
     margin: auto; }
   .values .columns h3 {
@@ -270,16 +280,18 @@ section#main {
     font-family: "ke aloha";
     text-align: center; }
   .values .columns p {
-    margin: auto;
-    font-size: 12px; }
+    width: 60%;
+    font-size: 12px;
+    margin: auto; }
 .values .valueslider {
   background-color: #fcd41e;
   margin-top: 50px;
-  height: 200px; }
-  .values .valueslider div {
-    height: 200px;
+  height: 250px;
+  padding-top: 25px; }
+  .values .valueslider div.row {
+    height: 90%;
     background-color: white;
-    width: 100%;
+    width: 80%;
     margin: auto;
     border-radius: 4px; }
 
