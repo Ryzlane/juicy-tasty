@@ -159,20 +159,36 @@ a {
     color: #fff;
     background: #9d2373;
     border-radius: 3px;
-    padding: 2px 20px;
-    z-index: 70%;
+    padding: 5px 5px;
+    z-index: 100;
     position: relative; }
+    @media screen and (min-width: 305px) {
+      .headerMain h1 {
+        padding: 2px 2px; }
+        .headerMain h1 br {
+          display: none; } }
     @media screen and (min-width: 39.9375em) {
       .headerMain h1 {
         width: auto; } }
+    @media screen and (min-width: 350px) {
+      .headerMain h1 {
+        padding: 2px 20px; } }
+    @media screen and (min-width: 470px) and (max-width: 63.9375em) {
+      .headerMain h1 {
+        font-size: 34px; } }
   .headerMain h2 {
     margin-top: 20px;
     font-family: 'ke aloha', cursive, arial;
-    font-size: 54px;
+    font-size: 40px;
     color: #fff;
     text-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
     z-index: 100;
-    position: relative; }
+    position: relative;
+    line-height: 32px; }
+    @media screen and (min-width: 39.9375em) {
+      .headerMain h2 {
+        margin-top: 40px;
+        font-size: 54px; } }
 
 .top-bar.sticky, .title-bar.sticky {
   position: fixed;
