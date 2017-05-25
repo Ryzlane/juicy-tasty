@@ -16,6 +16,7 @@
   }
   .columns{
     text-align: center;
+    margin-bottom: 20px;
     img{
       margin: auto;
       
@@ -28,21 +29,24 @@
     }
     p
     {
-      margin: auto;
       
+      width: 60%;
       font-size: 12px;
+      margin: auto;
     }
     
   }
   .valueslider{
     background-color:$secondary-color;
     margin-top: 50px;
-    height:200px;
+    height:250px;
+    padding-top: 25px;
     
-    div{
-      height:200px;
+    div.row{
+      
+      height:90%;
       background-color: white;
-      width: 100%;
+      width: 80%;
       margin: auto;
       border-radius: 4px;
       
