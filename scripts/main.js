@@ -3,21 +3,21 @@
 
 //SLIDER VALUES
 
-$(".slider").slick({
-arrows:false,
-    autoplay: false,
-    dots:false
-  
-});
-
-
-//SLIDER NAV
-
-$(".values .slidernav .columns img ").click(function(e){
-var index=$(this).data('gotoslide');
-      ;
-      $( ".slider" ).slick('slickGoTo', index);;
-    });
+// $(".slider").slick({
+// arrows:false,
+//     autoplay: false,
+//     dots:false
+//
+// });
+//
+//
+// //SLIDER NAV
+//
+// $(".values .slidernav .columns img ").click(function(e){
+// var index=$(this).data('gotoslide');
+//       ;
+//       $( ".slider" ).slick('slickGoTo', index);;
+//     });
 /////////////////////////////////////////////////////////////////////////
 
 
@@ -55,5 +55,3 @@ function updateFigures() {
     frames[i].style.height = '0' + previewImages[i].offsetHeight + 'px';
   }
 }
-
-
