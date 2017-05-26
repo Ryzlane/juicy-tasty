@@ -44,7 +44,7 @@ a.footerbutton {
   font-weight: 900; }
 
 .footertext {
-  margin-top: 50px; }
+  padding: 40px 0; }
 
 .footertext .columns div {
   color: black;
@@ -60,7 +60,7 @@ a.footerbutton {
 .footertext .columns div:first-child {
   color: #9d2373;
   font-weight: 900;
-  font-size: 12px; }
+  font-size: 16px; }
 
 @media screen and (max-width: 39.9375em) {
   .bloc {
@@ -102,6 +102,9 @@ nav {
       color: white;
       line-height: 34px;
       padding: 0px 40px 0px 40px; }
+      @media screen and (min-width: 1130px) {
+        .top-bar ul li a {
+          margin: 0 20px; } }
       .top-bar ul li a:hover {
         color: #9d2373; }
 
