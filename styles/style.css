@@ -289,6 +289,9 @@ section#main {
   height: 250px;
   padding-top: 25px;
   position: relative; }
+  @media screen and (max-width: 39.9375em) {
+    .values .valueslider {
+      display: none; } }
   .values .valueslider div.slide {
     display: block;
     position: absolute;

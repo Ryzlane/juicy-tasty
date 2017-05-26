@@ -47,6 +47,10 @@
     height:250px;
     padding-top: 25px;
     position: relative;
+     @media screen and (max-width: $small-breakpoint) {
+  
+    display: none;
+  }
 
     div.slide{
       display: block;
