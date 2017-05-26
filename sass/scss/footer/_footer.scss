@@ -35,9 +35,6 @@ footer {
   }
 }
 
-
-
-
 a.footerbutton {
   display: block;
   text-transform: uppercase;
@@ -47,11 +44,8 @@ a.footerbutton {
   text-align: center;
   margin: 20px auto 0 auto;
   width: 250px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
-  font-size: 13px;
+  padding: 5px;
+  font-size: 16px;
   font-weight: 900;
 }
 
@@ -61,12 +55,13 @@ a.footerbutton {
 }
 
 .footertext .columns div {
-  color:black;
+  color: black;
   font-weight: 500;
   font-size: 12px;
   width: 190px;
   margin: auto;
-  padding-left: 60px;
+  padding-left: 0px;
+  font-size: 16px;
    @media screen and (max-width: $small-breakpoint) {
 
     padding-left: 30px;
@@ -76,7 +71,6 @@ a.footerbutton {
 .footertext .columns div:first-child {
   color:#9d2373;
   font-weight: 900;
-  font-size: 16px;
 }
 
 @media screen and (max-width: $small-breakpoint) {
