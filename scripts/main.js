@@ -1,38 +1,26 @@
-/////Values//////////////////////////////////////////////////////////
+var sliderImgNav=document.querySelectorAll('.slidernav img'),
+currentlyActive=document.querySelector('.activeslide'),
+slides=document.querySelectorAll('.slide'),
+slidingarrow=document.querySelector('.slidingarrow'),
+navbar = document.querySelector('.top-bar'),
+navbarOffset = navbar.getBoundingClientRect().top - (navbar.clientHeight),
+figcaptions = document.querySelectorAll('#main figure p'),
+frames = document.querySelectorAll('#main figure .frame'),
+previewImages = document.querySelectorAll('#main figure img'),
+borderHeight;
 
-var sliderImgNav=document.querySelectorAll('.slidernav img');
-var currentlyActive=document.querySelector('.activeslide');
-var slides=document.querySelectorAll('.slide');
-var slidingarrow=document.querySelector('.slidingarrow');
-
-
-
-for(var i =0; i < sliderImgNav.length;i++)
-{
+// Carousel from values page
+for (var i =0; i < sliderImgNav.length;i++) {
   sliderImgNav[i].addEventListener(
     'click',
-    function(){
+    function() {
       var currentlyActive=document.querySelector('.activeslide');
       currentlyActive.classList.remove('activeslide');
       slides[this.getAttribute('data-gotoslide')].classList.add('activeslide');
       slidingarrow.style.left= this.getAttribute('data-movearrow') + "%";
-     
     }
-
-  )}
-
-
-
-
-/////////////////////////////////////////////////////////////////////////
-
-
-
-
-var navbar, navbarOffset, figcaptions, previewImages, frames, borderHeight;
-// Only make it sticky on desktop
-navbar = document.querySelector('.top-bar');
-navbarOffset = navbar.getBoundingClientRect().top - (navbar.clientHeight);
+  );
+}
 
 // make navbar sticky after scroll
 document.addEventListener('scroll', function() {
@@ -43,15 +31,7 @@ document.addEventListener('scroll', function() {
   }
 });
 
-figcaptions = document.querySelectorAll('#main figure p');
-frames = document.querySelectorAll('#main figure .frame');
-previewImages = document.querySelectorAll('#main figure img');
-
-updateFigures();
-window.onresize = function() {
-  updateFigures();
-}
-
+// Display image borders on landing page
 function updateFigures() {
   for (i=0; i<figcaptions.length; i++) {
     // Position figcaptions
@@ -62,4 +42,9 @@ function updateFigures() {
     frames[i].style.width = '0' + previewImages[i].offsetWidth + 'px';
     frames[i].style.height = '0' + previewImages[i].offsetHeight + 'px';
   }
+}
+
+updateFigures();
+window.onresize = function() {
+  updateFigures();
 }
