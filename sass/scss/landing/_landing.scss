@@ -9,6 +9,15 @@ section#main {
     transform: translateX(-3.5%);
   }
 
+  .row .columns {
+    @media (min-width: 930px) {
+      margin-top: 4%;
+    }
+    @media (min-width: 930px) {
+      margin-top: 4%;
+    }
+  }
+
   h3 {
     font-family: 'Ke Aloha';
   	font-size: 40px;

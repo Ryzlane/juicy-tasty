@@ -264,6 +264,12 @@ section#main {
   @media screen and (min-width: 39.9375em) and (max-width: 1023px) {
     section#main {
       transform: translateX(-3.5%); } }
+  @media (min-width: 930px) {
+    section#main .row .columns {
+      margin-top: 4%; } }
+  @media (min-width: 930px) {
+    section#main .row .columns {
+      margin-top: 4%; } }
   section#main h3 {
     font-family: 'Ke Aloha';
     font-size: 40px;
