@@ -57,7 +57,7 @@ a.footerbutton {
 .footertext .columns div:first-child {
   color: #9d2373;
   font-weight: 900;
-  font-size: 14px; }
+  font-size: 12px; }
 
 @media screen and (max-width: 39.9375em) {
   .bloc {
@@ -268,10 +268,12 @@ section#main {
   margin-top: 30px; }
 .values .slidernav {
   margin-top: 50px;
-  background-color: none; }
+  background-color: none;
+  padding-bottom: 50px; }
   .values .slidernav .columns {
     text-align: center;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    position: relative; }
     .values .slidernav .columns img {
       margin: auto; }
     .values .slidernav .columns h3 {
@@ -283,9 +285,17 @@ section#main {
       width: 60%;
       font-size: 12px;
       margin: auto; }
+  .values .slidernav .slidingarrow {
+    border-bottom: 20px solid #fcd41e;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: 44%;
+    bottom: -72px; }
 .values .valueslider {
   background-color: #fcd41e;
-  margin-top: 50px;
   height: 250px;
   padding-top: 25px;
   position: relative; }
@@ -324,7 +334,9 @@ section#main {
       border-bottom: 20px solid transparent;
       border-left: 20px solid #fcd41e;
       margin-top: 60px;
-      margin-left: 10px; }
+      margin-left: 10px;
+      height: 0;
+      width: 0; }
 
 @font-face {
   font-family: 'ke aloha';

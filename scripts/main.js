@@ -2,7 +2,8 @@
 
 var sliderImgNav=document.querySelectorAll('.slidernav img');
 var currentlyActive=document.querySelector('.activeslide');
-var slides=document.querySelectorAll('.slide')
+var slides=document.querySelectorAll('.slide');
+var slidingarrow=document.querySelector('.slidingarrow');
 
 
 
@@ -14,10 +15,14 @@ for(var i =0; i < sliderImgNav.length;i++)
       var currentlyActive=document.querySelector('.activeslide');
       currentlyActive.classList.remove('activeslide');
       slides[this.getAttribute('data-gotoslide')].classList.add('activeslide');
+      slidingarrow.style.left= this.getAttribute('data-movearrow') + "%";
      
     }
 
   )}
+
+
+
 
 /////////////////////////////////////////////////////////////////////////
 
