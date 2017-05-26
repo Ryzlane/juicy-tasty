@@ -53,6 +53,11 @@ nav{
 .title-bar{
   background-color: #9d2373;
   border-bottom: 3px solid $secondary-color;
+  height: 35px;
+}
+
+.title-bar-title {
+  margin-top: -12px;
 }
 
 .menu-icon{

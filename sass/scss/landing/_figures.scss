@@ -8,6 +8,10 @@ figure {
   transform: translateX(19px);
   text-align: left;
 
+  @media screen and (min-width: $small-breakpoint) and (max-width: 775px) {
+    margin-top: 13%;
+  }
+
   .frame {
     padding: 4px 0;
     border: 2px solid $primary-color;

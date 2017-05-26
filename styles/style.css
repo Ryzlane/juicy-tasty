@@ -1,6 +1,8 @@
 footer {
-  margin-top: 90px;
   background-color: #fff; }
+  @media screen and (min-width: 39.9375em) {
+    footer {
+      margin-top: 90px; } }
 
 .footerimg {
   background-image: url("../images/salades-vegan.jpg");
@@ -105,7 +107,11 @@ nav {
 
 .title-bar {
   background-color: #9d2373;
-  border-bottom: 3px solid #fcd41e; }
+  border-bottom: 3px solid #fcd41e;
+  height: 35px; }
+
+.title-bar-title {
+  margin-top: -12px; }
 
 .menu-icon {
   float: right; }
@@ -209,6 +215,9 @@ figure {
   margin-bottom: 70px;
   transform: translateX(19px);
   text-align: left; }
+  @media screen and (min-width: 39.9375em) and (max-width: 775px) {
+    figure {
+      margin-top: 13%; } }
   figure .frame {
     padding: 4px 0;
     border: 2px solid #9d2373;
@@ -247,7 +256,7 @@ figure {
     left: -25px; }
 
 section#main {
-  padding-top: 100px;
+  padding-top: 50px;
   text-align: center; }
   @media screen and (min-width: 39.9375em) {
     section#main {

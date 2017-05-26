@@ -1,12 +1,14 @@
 footer {
-  margin-top: 90px;
   background-color: #fff;
+  @media screen and (min-width: $small-breakpoint) {
+    margin-top: 90px;
+  }
 }
 
 .footerimg {
   background-image: url("../images/salades-vegan.jpg");
-  width:100%;
-  height:240px;
+  width: 100%;
+  height: 240px;
   background-size: cover;
   position: relative;
   text-align: center;
