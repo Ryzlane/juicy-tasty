@@ -19,7 +19,8 @@ footer {
     right: 0;
     bottom: 0; }
   .footerimg .row {
-    padding-top: 90px; }
+    padding-top: 90px;
+    position: relative; }
     @media screen and (max-width: 39.9375em) {
       .footerimg .row {
         padding-top: 60px; } }
@@ -128,7 +129,7 @@ a {
     left: 20px; } }
 @media screen and (min-width: 740px) and (max-width: 900px) {
   .top-bar ul li a {
-    padding: 0px 15px 0px 35px; } }
+    padding: 0px 25px 0px 25px; } }
 .headerMain {
   background: url("../images/repas-vegan-complet.jpg");
   width: 100%;
@@ -143,6 +144,9 @@ a {
       height: 550px; }
       .headerMain br {
         display: none; } }
+  @media screen and (min-width: 640px) and (max-width: 740px) {
+    .headerMain {
+      height: 450px; } }
   .headerMain:before {
     content: '';
     position: absolute;
@@ -151,7 +155,7 @@ a {
     bottom: 0;
     left: 0;
     background: #95808F;
-    opacity: .4; }
+    opacity: .35; }
   .headerMain h1 {
     margin: 0 auto;
     font-family: 'open sans';
@@ -203,7 +207,8 @@ figure {
   box-sizing: content-box;
   margin-top: 50px;
   margin-bottom: 70px;
-  transform: translateX(19px); }
+  transform: translateX(19px);
+  text-align: left; }
   figure .frame {
     padding: 4px 0;
     border: 2px solid #9d2373;
@@ -242,8 +247,12 @@ figure {
     left: -25px; }
 
 section#main {
-  padding-top: 100px; }
-  @media screen and (min-width: 39.9375em) and (max-width: 74.9375em) {
+  padding-top: 100px;
+  text-align: center; }
+  @media screen and (min-width: 39.9375em) {
+    section#main {
+      text-align: left; } }
+  @media screen and (min-width: 39.9375em) and (max-width: 1023px) {
     section#main {
       transform: translateX(-3.5%); } }
   section#main h3 {
@@ -255,7 +264,26 @@ section#main {
     font-family: 'Open Sans';
     font-size: 16px;
     line-height: 1.94;
-    letter-spacing: 0.7px; }
+    letter-spacing: 0.7px;
+    text-align: left; }
+  section#main a {
+    text-decoration: none;
+    padding: 0;
+    font-size: 16px;
+    position: relative;
+    color: #1d1d1d; }
+    section#main a:before {
+      transition: all 0.3s ease-in-out 0s;
+      content: '';
+      width: 40%;
+      position: absolute;
+      bottom: -8px;
+      height: 2px;
+      background: #fcd41e;
+      left: 0; }
+    @media screen and (min-width: 39.9375em) {
+      section#main a:hover:before {
+        width: 100%; } }
 
 .values p:first-child {
   color: black;

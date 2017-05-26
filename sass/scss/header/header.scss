@@ -17,6 +17,10 @@
     }
   }
 
+  @media screen and (min-width: 640px) and (max-width: 740px) {
+    height: 450px;
+  }
+
   // Filter to darken background image
   &:before {
     content: '';
@@ -26,7 +30,7 @@
   	bottom: 0;
   	left: 0;
     background: #95808F;
-  	opacity: .4;
+  	opacity: .35;
   }
 
   h1 {

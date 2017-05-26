@@ -6,6 +6,7 @@ figure {
   margin-top: 50px;
   margin-bottom: 70px;
   transform: translateX(19px);
+  text-align: left;
 
   .frame {
     padding: 4px 0;
@@ -21,7 +22,6 @@ figure {
   }
 
   img {
-    //display: block;
     z-index: 200;
     border-radius: 3px;
     /* makes z-index work */

@@ -24,11 +24,12 @@ footer {
 
   .row {
     padding-top: 90px;
-    
+    // so that it overlays the black filter
+    position: relative;
+
     @media screen and (max-width: $small-breakpoint) {
-  
-    padding-top: 60px;
-  }
+      padding-top: 60px;
+    }
   }
 }
 
@@ -65,7 +66,7 @@ a.footerbutton {
   margin: auto;
   padding-left: 60px;
    @media screen and (max-width: $small-breakpoint) {
-  
+
     padding-left: 30px;
   }
 }
