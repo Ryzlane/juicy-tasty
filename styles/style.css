@@ -36,15 +36,12 @@ a.footerbutton {
   text-align: center;
   margin: 20px auto 0 auto;
   width: 250px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
-  font-size: 13px;
+  padding: 5px;
+  font-size: 16px;
   font-weight: 900; }
 
 .footertext {
-  margin-top: 50px; }
+  padding: 40px 0; }
 
 .footertext .columns div {
   color: black;
@@ -52,15 +49,15 @@ a.footerbutton {
   font-size: 12px;
   width: 190px;
   margin: auto;
-  padding-left: 60px; }
+  padding-left: 0px;
+  font-size: 16px; }
   @media screen and (max-width: 39.9375em) {
     .footertext .columns div {
       padding-left: 30px; } }
 
 .footertext .columns div:first-child {
   color: #9d2373;
-  font-weight: 900;
-  font-size: 12px; }
+  font-weight: 900; }
 
 @media screen and (max-width: 39.9375em) {
   .bloc {
@@ -101,7 +98,11 @@ nav {
       text-decoration: none;
       color: white;
       line-height: 34px;
-      padding: 0px 40px 0px 40px; }
+      padding: 0px 40px 0px 40px;
+      text-transform: uppercase; }
+      @media screen and (min-width: 1130px) {
+        .top-bar ul li a {
+          margin: 0 20px; } }
       .top-bar ul li a:hover {
         color: #9d2373; }
 
@@ -145,6 +146,8 @@ a {
   position: relative;
   padding-top: 180px;
   text-align: center; }
+  .headerMain > a {
+    padding: 0; }
   @media screen and (min-width: 39.9375em) {
     .headerMain {
       height: 550px; }
@@ -174,7 +177,7 @@ a {
     position: relative; }
     @media screen and (min-width: 305px) {
       .headerMain h1 {
-        padding: 2px 2px; }
+        padding: 4px 2px; }
         .headerMain h1 br {
           display: none; } }
     @media screen and (min-width: 39.9375em) {
@@ -248,13 +251,13 @@ figure {
     z-index: 100;
     border-radius: 3px; }
 
-#main .row:nth-of-type(even) figure {
-  transform: translateX(54px); }
-  #main .row:nth-of-type(even) figure p {
-    left: -9px; }
-  #main .row:nth-of-type(even) figure .frame {
-    left: -25px; }
-
+@media screen and (min-width: 39.9375em) {
+  #main .row:nth-of-type(even) figure {
+    transform: translateX(54px); }
+    #main .row:nth-of-type(even) figure p {
+      left: -9px; }
+    #main .row:nth-of-type(even) figure .frame {
+      left: -25px; } }
 section#main {
   padding-top: 50px;
   text-align: center; }
@@ -270,11 +273,6 @@ section#main {
   @media (min-width: 930px) {
     section#main .row .columns {
       margin-top: 4%; } }
-  section#main h3 {
-    font-family: 'Ke Aloha';
-    font-size: 40px;
-    letter-spacing: 1.7px;
-    color: #9d2373; }
   section#main p.teaser {
     font-family: 'Open Sans';
     font-size: 16px;
@@ -381,6 +379,33 @@ section#main {
       height: 0;
       width: 0; }
 
+header.subHeader {
+  height: 270px;
+  margin-top: 13px;
+  margin-bottom: 25px;
+  background: url("../images/repas-vegan-complet.jpg");
+  background-size: cover;
+  position: relative; }
+  header.subHeader:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #443f42;
+    opacity: .35; }
+  header.subHeader h1 {
+    text-align: center !important;
+    color: #fff !important;
+    top: 50%;
+    transform: translateY(-50%);
+    /* overlay pseudo element */
+    position: relative; }
+
+section#practicalInfos ul li {
+  list-style: circle; }
+
 @font-face {
   font-family: 'ke aloha';
   src: url("../sass/fonts/ke_aloha.ttf"); }
@@ -399,10 +424,16 @@ html {
       content: '';
       position: fixed;
       z-index: -1;
-      top: 0;
+      top: -150px;
       left: 0;
       bottom: 0;
       right: 0;
       background: rgba(255, 255, 255, 0.95); }
+    html body .category {
+      font-family: 'Ke Aloha';
+      font-size: 40px;
+      letter-spacing: 1.7px;
+      color: #9d2373;
+      text-align: left; }
 
 /*# sourceMappingURL=style.css.map */

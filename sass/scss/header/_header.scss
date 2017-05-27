@@ -8,6 +8,10 @@
   padding-top: 180px;
   text-align: center;
 
+  > a {
+    padding: 0;
+  }
+
   @media screen and (min-width: $small-breakpoint) {
     height: 550px;
 
@@ -45,7 +49,7 @@
     // makes z-index work
     position: relative;
     @media screen and (min-width: 305px) {
-      padding: 2px 2px;
+      padding: 4px 2px;
       br {
         display: none;
       }

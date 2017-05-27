@@ -3,7 +3,8 @@ currentlyActive=document.querySelector('.activeslide'),
 slides=document.querySelectorAll('.slide'),
 slidingarrow=document.querySelector('.slidingarrow'),
 navbar = document.querySelector('.top-bar'),
-navbarOffset = navbar.getBoundingClientRect().top - (navbar.clientHeight),
+header = document.querySelector('.headerMain'),
+navbarOffset = document.querySelector('header').clientHeight,
 figcaptions = document.querySelectorAll('#main figure p'),
 frames = document.querySelectorAll('#main figure .frame'),
 previewImages = document.querySelectorAll('#main figure img'),
@@ -24,10 +25,14 @@ for (var i =0; i < sliderImgNav.length;i++) {
 
 // make navbar sticky after scroll
 document.addEventListener('scroll', function() {
-  if (window.pageYOffset + 11 > navbarOffset) {
-    navbar.classList.add('sticky');
-  } else {
-    navbar.classList.remove('sticky');
+  // only apply if on landing page
+  if (header != null) {
+    navbarOffset = header.clientHeight;
+    if (window.pageYOffset + 3 > navbarOffset) {
+      navbar.classList.add('sticky');
+    } else {
+      navbar.classList.remove('sticky');
+    }
   }
 });
 
@@ -48,3 +53,5 @@ updateFigures();
 window.onresize = function() {
   updateFigures();
 }
+
+// INCLUDE MAPBOX SCRIPT HERE

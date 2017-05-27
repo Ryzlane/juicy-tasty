@@ -4,39 +4,39 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Juicy &amp; Tasty | Wraps, salades &amp; juice bar | Restaurant Vegan Paris 11</title>
+    <title>Juicy &amp; Tasty | Wraps, salades &amp; juice bar | Restaurant Vegan Paris 9</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
     <link rel="stylesheet" href="styles/foundation.min.css">
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <header>
-      <div class="headerMain">
-        <img src="images/logo.jpg" class="logo" alt="Logo Juicy and Tasty" />
-        <h1>Wraps, salades <br>&amp; juice bar</h1>
-        <h2>Restaurant vegan</h2>
-        <nav>
-          <div class="title-bar" data-responsive-toggle="hamburgernav" data-hide-for="medium">
-            <button class="menu-icon right" type="button" data-toggle="hamburgernav"></button>
-            <div class="title-bar-title">Juicy &amp; Tasty</div>
+    <header class="headerMain">
+      <a href="index.html" title="Accueil - Juicy and Tasty">
+        <img src="images/juicy-and-tasty-logo.jpg" class="logo" alt="Logo Juicy and Tasty" />
+      </a>
+      <h1>Wraps, salades <br>&amp; juice bar</h1>
+      <h2>Restaurant vegan</h2>
+      <nav>
+        <div class="title-bar" data-responsive-toggle="hamburgernav" data-hide-for="medium">
+          <button class="menu-icon right" type="button" data-toggle="hamburgernav"></button>
+          <div class="title-bar-title">Juicy &amp; Tasty</div>
+        </div>
+        <div class="top-bar" id="hamburgernav">
+          <div class="top-bar-right">
+            <ul class="vertical medium-horizontal menu" data-dropdown-menu>
+              <li><a href="pages/practical-infos.html" title="Horaires et plan">Infos pratiques</a></li>
+              <li><a href="pages/history.html" title="À propos de nous">Notre histoire</a></li>
+              <li><a href="pages/values.html" title="Recyclage, anti-gaspillage et produits locaux">Nos valeurs</a></li>
+              <li><a href="pages/menu.html" title="La carte">Le menu</a></li>
+            </ul>
           </div>
-          <div class="top-bar" id="hamburgernav">
-            <div class="top-bar-right">
-              <ul class="vertical medium-horizontal menu" data-dropdown-menu>
-                <li><a href="#">INFOS PRATIQUES</a></li>
-                <li><a href="#">NOTRE HISTOIRE</a></li>
-                <li><a href="#">NOS VALEURS</a></li>
-                <li><a href="#">LE MENU</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
     <section id="main">
       <div class="row">
         <div class="columns small-12 medium-6 large-5 medium-push-6">
-          <h3>Entièrement Vegan</h3>
+          <h3 class="category">Entièrement Vegan</h3>
           <p class="teaser">
             Date de la déclaration : 14 septembre 2016, veille de la première journée de phase de poules du tournoi. Le lendemain, les joueurs confirment les propos de leur guide en essuyant une défaite. Il faut dire que le Portugais lie les gestes à la parole, puisqu’il aligne une équipe bis aux Pays-Bas.
           </p>
@@ -50,7 +50,7 @@
       </div>
       <div class="row">
         <div class="columns small-12 medium-6 medium-push-1 large-5">
-          <h3>Au coeur de Paris</h3>
+          <h3 class="category">Au coeur de Paris</h3>
           <p class="teaser">
             Date de la déclaration : 14 septembre 2016, veille de la première journée de phase de poules du tournoi. Le lendemain, les joueurs confirment les propos de leur guide en essuyant une défaite. Il faut dire que le Portugais lie les gestes à la parole, puisqu’il aligne une équipe bis aux Pays-Bas.
           </p>
@@ -62,12 +62,26 @@
           <div class="frame"></div>
         </figure>
       </div>
+      <div class="row">
+        <div class="columns small-12 medium-6 large-5 medium-push-6">
+          <h3 class="category">À propos de nous</h3>
+          <p class="teaser">
+            Date de la déclaration : 14 septembre 2016, veille de la première journée de phase de poules du tournoi. Le lendemain, les joueurs confirment les propos de leur guide en essuyant une défaite. Il faut dire que le Portugais lie les gestes à la parole, puisqu’il aligne une équipe bis aux Pays-Bas.
+          </p>
+          <a href="pages/values.html">Nos valeurs</a>
+        </div>
+        <figure class="columns small-12 medium-5 large-5 medium-pull-6">
+          <p>Le wrap Gyros</p>
+          <img src="images/wrap-vegan-gyros.jpg" alt="Le gyros, un délicieux wrap vegan" />
+          <div class="frame"></div>
+        </figure>
+      </div>
     </section>
-     <footer>
+    <footer>
       <div class="footerimg">
         <div class="row ">
           <div class="small-12 medium-6 large-6 columns">
-            <a class="footerbutton">commander avec ubereats</a>
+            <a class="footerbutton" href="https://www.ubereats.com/fr-FR/stores/254a405b-0029-435a-bc58-0eda0c1fe418/" target="_blank">commander avec ubereats</a>
           </div>
           <div class="small-12 medium-6 large-6 columns">
            <a class="footerbutton">voir le menu</a>
@@ -78,30 +92,29 @@
         <div class="row">
           <div class="small-6 medium-3 large-3 columns">
             <div>CONTACTEZ NOUS</div>
-             <div>Facebook</div>
+            <div>Facebook</div>
             <div>Email</div>
             <div>09 84 28 80 02</div>
           </div>
           <div class="small-6 medium-3 large-3 columns">
-          <div>ILS PARLENT DE NOUS</div>
-          <div>VegoResto</div>
-          <div>TripAdvisor</div>
-          <div>HappyCow</div>
+            <div>SITES TIERS</div>
+            <div>VegoResto</div>
+            <div>TripAdvisor</div>
+            <div>HappyCow</div>
           </div>
           <div class="small-6 medium-3 large-3 columns">
-          <div>RETROUVEZ NOUS</div>
-          <div>78 Rue la Fayette</div>
-          <div>75009 Paris</div>
+            <div>RETROUVEZ NOUS</div>
+            <div>Juicy &amp; Tasty</div>
+            <div>78 Rue la Fayette</div>
+            <div>75009 Paris</div>
           </div>
           <div class="small-6 medium-3 large-3 columns">
-          <div>PLAN DU SITE</div>
-          <div>Nos produits</div>
-          <div>Infos pratiques</div>
-          <div>Notre Histoire</div>
-          <div>Mentions légales</div>
+            <div>PLAN DU SITE</div>
+            <div>Nos produits</div>
+            <div>Infos pratiques</div>
+            <div>Notre Histoire</div>
+            <div>Mentions légales</div>
           </div>
-         </div>
-         </div>
         </div>
       </div>
     </footer>

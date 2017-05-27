@@ -8,6 +8,7 @@
 @import "landing/figures";
 @import "landing/landing";
 @import "values/values";
+@import "practical-infos/practical-infos";
 
 // LINK OF THE ADDED FONT
 
@@ -34,11 +35,20 @@ html {
       content: '';
       position: fixed;
       z-index: -1;
-      top: 0;
+      // prevent scroll lag on mobile
+      top: -150px;
       left: 0;
       bottom: 0;
       right: 0;
       background: rgba(255, 255, 255, .95);
+    }
+
+    .category {
+      font-family: 'Ke Aloha';
+    	font-size: 40px;
+    	letter-spacing: 1.7px;
+    	color: $primary-color;
+      text-align: left;
     }
   }
 }
