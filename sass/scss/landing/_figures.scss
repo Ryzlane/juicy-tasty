@@ -49,18 +49,18 @@ figure {
 
 }
 
-#main .row:nth-of-type(even) {
+@media screen and (min-width: $small-breakpoint) {
+  #main .row:nth-of-type(even) {
+    figure {
+      transform: translateX(54px);
 
-  figure {
-    transform: translateX(54px);
+      p {
+        left: -9px;
+      }
 
-    p {
-      left: -9px;
-    }
-
-    .frame {
-      left: -25px;
+      .frame {
+        left: -25px;
+      }
     }
   }
-
 }

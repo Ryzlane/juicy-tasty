@@ -35,7 +35,8 @@ html {
       content: '';
       position: fixed;
       z-index: -1;
-      top: 0;
+      // prevent scroll lag on mobile
+      top: -150px;
       left: 0;
       bottom: 0;
       right: 0;
@@ -47,6 +48,7 @@ html {
     	font-size: 40px;
     	letter-spacing: 1.7px;
     	color: $primary-color;
+      text-align: left;
     }
   }
 }
