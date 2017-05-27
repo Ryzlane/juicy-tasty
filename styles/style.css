@@ -98,7 +98,8 @@ nav {
       text-decoration: none;
       color: white;
       line-height: 34px;
-      padding: 0px 40px 0px 40px; }
+      padding: 0px 40px 0px 40px;
+      text-transform: uppercase; }
       @media screen and (min-width: 1130px) {
         .top-bar ul li a {
           margin: 0 20px; } }
@@ -393,13 +394,15 @@ header.subHeader {
     background: #443f42;
     opacity: .35; }
   header.subHeader h1 {
-    color: #fff;
     text-align: center;
-    font-family: 'ke aloha';
-    font-size: 36px;
-    position: relative;
+    color: #fff !important;
     top: 50%;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    /* overlay pseudo element */
+    position: relative; }
+
+section#practicalInfos ul li {
+  list-style: circle; }
 
 @font-face {
   font-family: 'ke aloha';
