@@ -53,3 +53,5 @@ updateFigures();
 window.onresize = function() {
   updateFigures();
 }
+
+// INCLUDE MAPBOX SCRIPT HERE

@@ -270,11 +270,6 @@ section#main {
   @media (min-width: 930px) {
     section#main .row .columns {
       margin-top: 4%; } }
-  section#main h3 {
-    font-family: 'Ke Aloha';
-    font-size: 40px;
-    letter-spacing: 1.7px;
-    color: #9d2373; }
   section#main p.teaser {
     font-family: 'Open Sans';
     font-size: 16px;
@@ -382,8 +377,9 @@ section#main {
       width: 0; }
 
 header.subHeader {
-  height: 289px;
+  height: 270px;
   margin-top: 13px;
+  margin-bottom: 25px;
   background: url("../images/repas-vegan-complet.jpg");
   background-size: cover;
   position: relative; }
@@ -428,5 +424,10 @@ html {
       bottom: 0;
       right: 0;
       background: rgba(255, 255, 255, 0.95); }
+    html body .category {
+      font-family: 'Ke Aloha';
+      font-size: 40px;
+      letter-spacing: 1.7px;
+      color: #9d2373; }
 
 /*# sourceMappingURL=style.css.map */
