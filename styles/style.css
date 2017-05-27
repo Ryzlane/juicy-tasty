@@ -385,7 +385,7 @@ header.subHeader {
   height: 289px;
   margin-top: 13px;
   background: url("../images/repas-vegan-complet.jpg");
-  border-style: cover;
+  background-size: cover;
   position: relative; }
   header.subHeader:before {
     content: '';
