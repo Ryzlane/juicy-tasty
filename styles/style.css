@@ -381,6 +381,30 @@ section#main {
       height: 0;
       width: 0; }
 
+header.subHeader {
+  height: 289px;
+  margin-top: 13px;
+  background: url("../images/repas-vegan-complet.jpg");
+  border-style: cover;
+  position: relative; }
+  header.subHeader:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #443f42;
+    opacity: .35; }
+  header.subHeader h1 {
+    color: #fff;
+    text-align: center;
+    font-family: 'ke aloha';
+    font-size: 36px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+
 @font-face {
   font-family: 'ke aloha';
   src: url("../sass/fonts/ke_aloha.ttf"); }
