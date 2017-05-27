@@ -396,7 +396,7 @@ header.subHeader {
     background: #443f42;
     opacity: .35; }
   header.subHeader h1 {
-    text-align: center;
+    text-align: center !important;
     color: #fff !important;
     top: 50%;
     transform: translateY(-50%);
