@@ -1,8 +1,6 @@
 footer {
-  background-color: #fff; }
-  @media screen and (min-width: 39.9375em) {
-    footer {
-      margin-top: 60px; } }
+  background-color: #fff;
+  margin-top: 60px; }
 
 .footerimg {
   background-image: url("../images/salades-vegan.jpg");
