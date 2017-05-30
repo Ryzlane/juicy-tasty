@@ -89,3 +89,32 @@
   width: 100%;
   z-index: 0;
 }
+
+header.subHeader {
+  height: 270px;
+  margin-top: 13px;
+  margin-bottom: 25px;
+  background: url('../images/repas-vegan-complet.jpg');
+  background-size: cover;
+  position: relative;
+
+  &:before {
+    content: '';
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+    background: #443f42;
+  	opacity: .35;
+  }
+
+  h1 {
+    text-align: center !important;
+    color: #fff !important;
+    top: 50%;
+    transform: translateY(-50%);
+    /* overlay pseudo element */
+    position: relative;
+  }
+}

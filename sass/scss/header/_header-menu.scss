@@ -61,6 +61,14 @@ nav{
   height: 35px;
 }
 
+.top-bar.sticky, .title-bar.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
 .title-bar-title {
   margin-top: -12px;
 }
