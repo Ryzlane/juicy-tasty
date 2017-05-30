@@ -437,7 +437,6 @@ section#main {
 
 .menuboard {
   color: white;
-  height: 300px;
   margin-top: 30px;
   margin-bottom: 80px;
   border: 5px #fcd41e solid;
@@ -447,8 +446,26 @@ section#main {
   .menuboard h2 {
     text-align: center;
     font-family: "ke aloha"; }
+    @media screen and (max-width: 39.9375em) {
+      .menuboard h2 {
+        font-size: 1.8rem; } }
+  .menuboard h3 {
+    font-family: "ke aloha"; }
+    @media screen and (max-width: 39.9375em) {
+      .menuboard h3 {
+        font-size: 1.5rem; } }
+  .menuboard .separator {
+    width: 3px;
+    height: 200px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; }
   .menuboard .columns {
     font-family: 'Open',sans-serif; }
+    .menuboard .columns p {
+      margin-bottom: 10px;
+      font-weight: 400; }
   .menuboard:nth-child(odd) .pill {
     top: -30px;
     left: -30px; }
