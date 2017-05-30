@@ -352,12 +352,16 @@ section#main {
       margin: auto;
     }*/ }
     .values .slidernav .columns img {
-      margin: auto; }
+      margin: auto;
+      cursor: pointer;
+      cursor: hand; }
     .values .slidernav .columns h3 {
       margin-top: 20px;
       color: #9d2373;
       font-family: "ke aloha";
-      text-align: center; }
+      text-align: center;
+      cursor: pointer;
+      cursor: hand; }
   .values .slidernav .slidingarrow {
     border-bottom: 20px solid #fcd41e;
     border-left: 20px solid transparent;
@@ -393,12 +397,10 @@ section#main {
     @media screen and (max-width: 63.9375em) {
       .values .valueslider div.slide {
         width: 85%; } }
+    .values .valueslider div.slide .textslide {
+      padding-left: 50px; }
     .values .valueslider div.slide.activeslide {
       z-index: 200; }
-    .values .valueslider div.slide .visual {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
     .values .valueslider div.slide .columns {
       height: 175px;
       position: relative; }
