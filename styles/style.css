@@ -435,6 +435,38 @@ section#main {
           .values .valueslider div.slide .columns .arrowtotext {
             left: 65%; } }
 
+.menuboard {
+  color: white;
+  height: 300px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  border: 5px #fcd41e solid;
+  background: url("../images/ardoise.jpg");
+  background-size: cover;
+  position: relative; }
+  .menuboard h2 {
+    text-align: center;
+    font-family: "ke aloha"; }
+  .menuboard .columns {
+    font-family: 'Open',sans-serif; }
+  .menuboard:nth-child(odd) .pill {
+    top: -30px;
+    left: -30px; }
+  .menuboard:nth-child(even) .pill {
+    top: -30px;
+    right: -30px; }
+  .menuboard .pill {
+    color: black;
+    background-color: #fcd41e;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 45px;
+    font-family: "ke aloha"; }
+
 section#practicalInfos iframe {
   width: 100%;
   min-height: 300px;
