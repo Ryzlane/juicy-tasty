@@ -363,7 +363,9 @@ section#main {
       flex-direction: column;
       justify-content: center; }
     .values .valueslider div.slide .columns img {
-      margin-top: 30px; }
+      margin-top: 30px;
+      min-height: 100px;
+      min-width: 100px; }
     .values .valueslider div.slide .columns h3 {
       color: #9d2373;
       font-family: "ke aloha";
