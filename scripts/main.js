@@ -8,6 +8,7 @@ navbarOffset = document.querySelector('header').clientHeight,
 figcaptions = document.querySelectorAll('#main figure p'),
 frames = document.querySelectorAll('#main figure .frame'),
 previewImages = document.querySelectorAll('#main figure img'),
+sliderTitleNav=document.querySelectorAll('.slidernav h3'),
 borderHeight;
 
 // Carousel from values page
@@ -22,7 +23,17 @@ for (var i =0; i < sliderImgNav.length;i++) {
     }
   );
 }
-
+for (var i =0; i < sliderImgNav.length;i++) {
+  sliderTitleNav[i].addEventListener(
+    'click',
+    function() {
+      var currentlyActive=document.querySelector('.activeslide');
+      currentlyActive.classList.remove('activeslide');
+      slides[this.getAttribute('data-gotoslide')].classList.add('activeslide');
+      slidingarrow.style.left= this.getAttribute('data-movearrow') + "%";
+    }
+  );
+}
 // make navbar sticky after scroll
 document.addEventListener('scroll', function() {
   // only apply if on landing page

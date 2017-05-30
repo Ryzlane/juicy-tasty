@@ -1,8 +1,6 @@
 footer {
-  background-color: #fff; }
-  @media screen and (min-width: 39.9375em) {
-    footer {
-      margin-top: 90px; } }
+  background-color: #fff;
+  margin-top: 60px; }
 
 .footerimg {
   background-image: url("../images/salades-vegan.jpg");
@@ -326,7 +324,7 @@ section#main {
       section#main a:hover:before {
         width: 100%; } }
 
-.values p:first-child {
+.values p:first-child, .values .outrotext {
   color: black;
   font-family: 'Open',sans-serif;
   text-align: center;
@@ -336,10 +334,10 @@ section#main {
   font-weight: 400;
   margin-top: 30px; }
   @media screen and (max-width: 63.9375em) {
-    .values p:first-child {
+    .values p:first-child, .values .outrotext {
       width: 60%; } }
   @media screen and (max-width: 39.9375em) {
-    .values p:first-child {
+    .values p:first-child, .values .outrotext {
       width: 80%; } }
 .values .slidernav {
   margin-top: 50px;
@@ -347,21 +345,27 @@ section#main {
   .values .slidernav .columns {
     text-align: center;
     margin-bottom: 20px;
-    position: relative;
-      /* p
-      {
-
-      width: 60%;
-      font-size: 12px;
-      margin: auto;
-    }*/ }
+    position: relative; }
     .values .slidernav .columns img {
-      margin: auto; }
+      margin: auto;
+      cursor: pointer;
+      cursor: hand; }
     .values .slidernav .columns h3 {
       margin-top: 20px;
       color: #9d2373;
       font-family: "ke aloha";
-      text-align: center; }
+      text-align: center;
+      cursor: pointer;
+      cursor: hand; }
+    .values .slidernav .columns p {
+      width: 80%;
+      font-size: 12px;
+      margin: auto;
+      display: none;
+      text-align: left; }
+      @media screen and (max-width: 39.9375em) {
+        .values .slidernav .columns p {
+          display: block; } }
   .values .slidernav .slidingarrow {
     border-bottom: 20px solid #fcd41e;
     border-left: 20px solid transparent;
@@ -397,12 +401,10 @@ section#main {
     @media screen and (max-width: 63.9375em) {
       .values .valueslider div.slide {
         width: 85%; } }
+    .values .valueslider div.slide .textslide {
+      padding-left: 50px; }
     .values .valueslider div.slide.activeslide {
       z-index: 200; }
-    .values .valueslider div.slide .visual {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
     .values .valueslider div.slide .columns {
       height: 175px;
       position: relative; }
@@ -410,14 +412,14 @@ section#main {
         top: 50%;
         transform: translateY(-50%);
         position: absolute;
-        min-height: 100px;
-        min-width: 100px; }
+        min-height: 120px;
+        min-width: 120px; }
       .values .valueslider div.slide .columns h3 {
         color: #9d2373;
         font-family: "ke aloha";
         margin-top: 10px; }
       .values .valueslider div.slide .columns p {
-        font-size: 12px; }
+        font-size: 13px; }
       .values .valueslider div.slide .columns .arrowtotext {
         border-top: 20px solid transparent;
         border-bottom: 20px solid transparent;
