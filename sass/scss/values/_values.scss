@@ -12,21 +12,21 @@
     font-size: 16px;
     font-weight: 400;
     margin-top: 30px;
-       @media screen and (max-width: $medium-breakpoint) {
+    @media screen and (max-width: $medium-breakpoint) {
 
       width:60%;
     }
-      @media screen and (max-width: $small-breakpoint) {
+    @media screen and (max-width: $small-breakpoint) {
 
       width:80%;
     }
-    
+
   }
   .slidernav{
     margin-top: 50px;
     background-color: none;
-    
-    
+
+
     .columns{
       text-align: center;
       margin-bottom: 20px;
@@ -41,16 +41,16 @@
         font-family: "ke aloha";
         text-align: center;
       }
-     /* p
+      /* p
       {
 
-        width: 60%;
-        font-size: 12px;
-        margin: auto;
-      }*/
+      width: 60%;
+      font-size: 12px;
+      margin: auto;
+    }*/
 
     }
-       .slidingarrow {
+    .slidingarrow {
 
 
       border-bottom: 20px solid $secondary-color;
@@ -61,11 +61,11 @@
       width:0;
       position: absolute;
       left:44%;  
-      
-          @media screen and (max-width: $small-breakpoint) {
-      display: none;
-    }
-      
+
+      @media screen and (max-width: $small-breakpoint) {
+        display: none;
+      }
+
 
 
     }
@@ -74,7 +74,7 @@
 
   .valueslider{
     background-color:$secondary-color;
-    
+
     height:250px;
     padding-top: 25px;
     position: relative;
@@ -83,7 +83,7 @@
       display: none;
     }
 
- 
+
     div.slide{
       display: block;
       position: absolute;
@@ -97,10 +97,10 @@
       left: 0;
       right: 0;
       z-index: -20;
-           @media screen and (max-width: $medium-breakpoint) {
+      @media screen and (max-width: $medium-breakpoint) {
 
-      width:85%;
-    }
+        width:85%;
+      }
 
       &.activeslide{
         z-index:200;
@@ -113,15 +113,15 @@
       .columns{
         height: 175px;
         position: relative;
-        
+
         img{
-         top:50%;
+          top:50%;
           transform: translateY(-50%);
           position: absolute;
           min-height: 100px;
           min-width: 100px;
-        
-          
+
+
         }
         h3{
           color:$primary-color;
@@ -138,18 +138,18 @@
           border-bottom: 20px solid transparent;
 
           border-left: 20px solid $secondary-color;
-            top:50%;
+          top:50%;
           transform: translateY(-50%);
           position: absolute;
           height:0;
           width:0;
           margin: auto;
           left:50%;
-              @media screen and (max-width: $medium-breakpoint) {
+          @media screen and (max-width: $medium-breakpoint) {
 
-      left: 65%;
-    }
-      
+            left: 65%;
+          }
+
 
 
 

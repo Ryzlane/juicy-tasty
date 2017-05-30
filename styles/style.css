@@ -111,6 +111,13 @@ nav {
   border-bottom: 3px solid #fcd41e;
   height: 35px; }
 
+.top-bar.sticky, .title-bar.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0; }
+
 .title-bar-title {
   margin-top: -12px; }
 
@@ -203,12 +210,29 @@ a {
         margin-top: 40px;
         font-size: 54px; } }
 
-.top-bar.sticky, .title-bar.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 0; }
+header.subHeader {
+  height: 270px;
+  margin-top: 13px;
+  margin-bottom: 25px;
+  background: url("../images/repas-vegan-complet.jpg");
+  background-size: cover;
+  position: relative; }
+  header.subHeader:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #443f42;
+    opacity: .35; }
+  header.subHeader h1 {
+    text-align: center !important;
+    color: #fff !important;
+    top: 50%;
+    transform: translateY(-50%);
+    /* overlay pseudo element */
+    position: relative; }
 
 figure {
   width: 400px;
@@ -320,13 +344,13 @@ section#main {
     text-align: center;
     margin-bottom: 20px;
     position: relative;
-     /* p
+      /* p
       {
 
-        width: 60%;
-        font-size: 12px;
-        margin: auto;
-      }*/ }
+      width: 60%;
+      font-size: 12px;
+      margin: auto;
+    }*/ }
     .values .slidernav .columns img {
       margin: auto; }
     .values .slidernav .columns h3 {
@@ -405,33 +429,10 @@ section#main {
           .values .valueslider div.slide .columns .arrowtotext {
             left: 65%; } }
 
-header.subHeader {
-  height: 270px;
-  margin-top: 13px;
-  margin-bottom: 25px;
-  background: url("../images/repas-vegan-complet.jpg");
-  background-size: cover;
-  position: relative; }
-  header.subHeader:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: #443f42;
-    opacity: .35; }
-  header.subHeader h1 {
-    text-align: center !important;
-    color: #fff !important;
-    top: 50%;
-    transform: translateY(-50%);
-    /* overlay pseudo element */
-    position: relative; }
-
 section#practicalInfos iframe {
   width: 100%;
-  min-height: 300px; }
+  min-height: 300px;
+  border: 0; }
 section#practicalInfos ul li {
   list-style: circle; }
 
