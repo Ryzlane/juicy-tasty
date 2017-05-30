@@ -210,13 +210,6 @@ a {
         margin-top: 40px;
         font-size: 54px; } }
 
-.top-bar.sticky, .title-bar.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 0; }
-
 header.subHeader {
   height: 270px;
   margin-top: 13px;
