@@ -3,7 +3,7 @@
 
 
 .values {
-  p:first-child{
+  p:first-child, .outrotext{
     color: black;
     font-family: 'Open',sans-serif;
     text-align: center;
@@ -45,13 +45,19 @@
         cursor: pointer; 
         cursor: hand;
       }
-      /* p
+       p
       {
 
-      width: 60%;
+      width: 80%;
       font-size: 12px;
       margin: auto;
-    }*/
+      display: none;
+        text-align: left;
+      @media screen and (max-width: $small-breakpoint) {
+
+      display: block;
+    }  
+    }
 
     }
     .slidingarrow {
@@ -125,8 +131,8 @@
           top:50%;
           transform: translateY(-50%);
           position: absolute;
-          min-height: 100px;
-          min-width: 100px;
+          min-height: 120px;
+          min-width: 120px;
 
 
         }
@@ -137,7 +143,7 @@
 
         }
         p{
-          font-size: 12px;
+          font-size: 13px;
         }
         .arrowtotext {
 
@@ -172,6 +178,7 @@
 
     }
   }
+ 
 
 }
 
