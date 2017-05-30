@@ -5,18 +5,27 @@
 .values {
   p:first-child{
     color: black;
-    font-family: 'ke aloha';
+    font-family: 'Open',sans-serif;
     text-align: center;
-    width: 390px;
+    width: 40%;
     margin:auto;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     margin-top: 30px;
+       @media screen and (max-width: $medium-breakpoint) {
+
+      width:60%;
+    }
+      @media screen and (max-width: $small-breakpoint) {
+
+      width:80%;
+    }
+    
   }
   .slidernav{
     margin-top: 50px;
     background-color: none;
-    padding-bottom: 50px;
+    
     
     .columns{
       text-align: center;
@@ -32,13 +41,13 @@
         font-family: "ke aloha";
         text-align: center;
       }
-      p
+     /* p
       {
 
         width: 60%;
         font-size: 12px;
         margin: auto;
-      }
+      }*/
 
     }
        .slidingarrow {
@@ -52,7 +61,10 @@
       width:0;
       position: absolute;
       left:44%;  
-      bottom: -72px;
+      
+          @media screen and (max-width: $small-breakpoint) {
+      display: none;
+    }
       
 
 
@@ -85,6 +97,10 @@
       left: 0;
       right: 0;
       z-index: -20;
+           @media screen and (max-width: $medium-breakpoint) {
+
+      width:85%;
+    }
 
       &.activeslide{
         z-index:200;
@@ -95,10 +111,17 @@
         justify-content: center; 
       }
       .columns{
+        height: 175px;
+        position: relative;
+        
         img{
-          margin-top: 30px;
+         top:50%;
+          transform: translateY(-50%);
+          position: absolute;
           min-height: 100px;
           min-width: 100px;
+        
+          
         }
         h3{
           color:$primary-color;
@@ -115,10 +138,18 @@
           border-bottom: 20px solid transparent;
 
           border-left: 20px solid $secondary-color;
-          margin-top: 60px;
-          margin-left: 10px;
+            top:50%;
+          transform: translateY(-50%);
+          position: absolute;
           height:0;
           width:0;
+          margin: auto;
+          left:50%;
+              @media screen and (max-width: $medium-breakpoint) {
+
+      left: 65%;
+    }
+      
 
 
 
@@ -136,5 +167,6 @@
   }
 
 }
+
 
 
