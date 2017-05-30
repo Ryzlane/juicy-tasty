@@ -8,7 +8,9 @@ navbarOffset = document.querySelector('header').clientHeight,
 figcaptions = document.querySelectorAll('#main figure p'),
 frames = document.querySelectorAll('#main figure .frame'),
 previewImages = document.querySelectorAll('#main figure img'),
-sliderTitleNav=document.querySelectorAll('.slidernav h3'),
+sliderTitleNav = document.querySelectorAll('.slidernav h3'),
+documentWidthEm = document.body.clientWidth / parseFloat(window.getComputedStyle(document.body).fontSize),
+logo = document.querySelector('.logo'),
 borderHeight;
 
 // Carousel from values page
@@ -58,11 +60,14 @@ function updateFigures() {
     frames[i].style.width = '0' + previewImages[i].offsetWidth + 'px';
     frames[i].style.height = '0' + previewImages[i].offsetHeight + 'px';
   }
+  // Position logo img
+  if (documentWidthEm > 39.9375) {
+    logo.style.left = '0' + previewImages[0].getBoundingClientRect().left + 'px';
+  }
 }
 
 updateFigures();
 window.onresize = function() {
+  documentWidthEm = document.body.clientWidth / parseFloat(window.getComputedStyle(document.body).fontSize);
   updateFigures();
 }
-
-// INCLUDE MAPBOX SCRIPT HERE
