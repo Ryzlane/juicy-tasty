@@ -403,6 +403,9 @@ header.subHeader {
     /* overlay pseudo element */
     position: relative; }
 
+section#practicalInfos iframe {
+  width: 100%;
+  min-height: 300px; }
 section#practicalInfos ul li {
   list-style: circle; }
 
