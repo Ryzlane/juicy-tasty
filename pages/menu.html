@@ -2,13 +2,39 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>Menu</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infos pratiques : horaires et adresse | Juicy &amp; Tasty</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/foundation.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
   </head>
   <body>
-    <p>
-      Quam ob rem ut ii qui superiores sunt submittere se debent in amicitia, sic quodam modo inferiores extollere. Sunt enim quidam qui molestas amicitias faciunt, cum ipsi se contemni putant; quod non fere contingit nisi iis qui etiam contemnendos se arbitrantur; qui hac opinione non modo verbis sed etiam opere levandi sunt. Et quoniam mirari posse quosdam peregrinos existimo haec lecturos forsitan, si contigerit, quamobrem cum oratio ad ea monstranda deflexerit quae Romae gererentur, nihil praeter seditiones narratur et tabernas et vilitates harum similis alias, summatim causas perstringam nusquam a veritate sponte propria digressurus. Dum apud Persas, ut supra narravimus, perfidia regis motus agitat insperatos, et in eois tractibus bella rediviva consurgunt, anno sexto decimo et eo diutius post Nepotiani exitium, saeviens per urbem aeternam urebat cuncta Bellona, ex primordiis minimis ad clades excita luctuosas, quas obliterasset utinam iuge silentium! ne forte paria quandoque temptentur, plus exemplis generalibus nocitura quam delictis.
-    </p>
-    <script src="scripts/main.js"></script>
+    <a href="../index.html">
+      <img src="../images/juicy-and-tasty-logo.jpg" class="logo" alt="Logo Juicy and Tasty" />
+    </a>
+    <nav>
+      <div class="title-bar sticky" data-responsive-toggle="hamburgernav" data-hide-for="medium">
+        <button class="menu-icon right" type="button" data-toggle="hamburgernav"></button>
+        <div class="title-bar-title">Juicy &amp; Tasty</div>
+      </div>
+      <div class="top-bar sticky" id="hamburgernav">
+        <div class="top-bar-right">
+          <ul class="vertical medium-horizontal menu" data-dropdown-menu>
+            <li><a href="practical-infos.html" title="Horaires et plan">Infos pratiques</a></li>
+            <li><a href="history.html" title="À propos de nous">Notre histoire</a></li>
+            <li><a href="values.html" title="Recyclage, anti-gaspillage et produits locaux">Nos valeurs</a></li>
+            <li><a href="menu.html" title="La carte">Le menu</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="subHeader">
+      <h1 class="category">Notre Menu</h1>
+    </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
+    <script src="../scripts/main.js"></script>
+    <script> $(document).foundation() </script>
   </body>
 </html>
