@@ -145,40 +145,10 @@
         p{
           font-size: 13px;
         }
-        .arrowtotext {
-
-          border-top: 20px solid transparent;
-          border-bottom: 20px solid transparent;
-
-          border-left: 20px solid $secondary-color;
-          top:50%;
-          transform: translateY(-50%);
-          position: absolute;
-          height:0;
-          width:0;
-          margin: auto;
-          left:50%;
-          @media screen and (max-width: $medium-breakpoint) {
-
-            left: 65%;
-          }
-
-
-
-
-        }
-
-      }
-
-
-
-
-
-
-
-    }
-  }
  
 
+      }
+    }
+  }
 }
 

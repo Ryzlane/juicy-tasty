@@ -36,6 +36,7 @@ for (var i =0; i < sliderImgNav.length;i++) {
     }
   );
 }
+
 // make navbar sticky after scroll
 document.addEventListener('scroll', function() {
   // only apply if on landing page

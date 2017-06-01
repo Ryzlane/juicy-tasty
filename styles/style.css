@@ -419,20 +419,6 @@ section#main {
         margin-top: 10px; }
       .values .valueslider div.slide .columns p {
         font-size: 13px; }
-      .values .valueslider div.slide .columns .arrowtotext {
-        border-top: 20px solid transparent;
-        border-bottom: 20px solid transparent;
-        border-left: 20px solid #fcd41e;
-        top: 50%;
-        transform: translateY(-50%);
-        position: absolute;
-        height: 0;
-        width: 0;
-        margin: auto;
-        left: 50%; }
-        @media screen and (max-width: 63.9375em) {
-          .values .valueslider div.slide .columns .arrowtotext {
-            left: 65%; } }
 
 .menuboard {
   color: white;
@@ -447,12 +433,15 @@ section#main {
     font-family: "ke aloha"; }
     @media screen and (max-width: 39.9375em) {
       .menuboard h2 {
-        font-size: 1.8rem; } }
+        font-size: 1.4rem; } }
   .menuboard h3 {
     font-family: "ke aloha"; }
     @media screen and (max-width: 39.9375em) {
       .menuboard h3 {
         font-size: 1.5rem; } }
+    @media screen and (max-width: 39.9375em) {
+      .menuboard h3 {
+        font-size: 1.2rem; } }
   .menuboard .separator {
     width: 3px;
     height: 200px;
@@ -465,12 +454,50 @@ section#main {
     .menuboard .columns p {
       margin-bottom: 10px;
       font-weight: 400; }
+      @media screen and (max-width: 39.9375em) {
+        .menuboard .columns p {
+          font-size: 12px; } }
   .menuboard:nth-child(odd) .pill {
     top: -30px;
     left: -30px; }
+    @media screen and (max-width: 39.9375em) {
+      .menuboard:nth-child(odd) .pill {
+        top: -20px;
+        left: -20px; } }
   .menuboard:nth-child(even) .pill {
     top: -30px;
     right: -30px; }
+    @media screen and (max-width: 39.9375em) {
+      .menuboard:nth-child(even) .pill {
+        top: -20px;
+        right: -20px; } }
+  .menuboard:nth-child(2) {
+    text-align: center; }
+    @media screen and (max-width: 39.9375em) {
+      .menuboard:nth-child(2) {
+        text-align: left; } }
+    .menuboard:nth-child(2) h3 {
+      margin-top: 30px;
+      height: 100px; }
+      @media screen and (max-width: 39.9375em) {
+        .menuboard:nth-child(2) h3 {
+          height: 60px; } }
+  .menuboard:nth-child(3) .row {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    position: relative; }
+    .menuboard:nth-child(3) .row h3 {
+      margin-top: 50%;
+      font-size: 5em; }
+      @media screen and (max-width: 39.9375em) {
+        .menuboard:nth-child(3) .row h3 {
+          font-size: 2.0rem; } }
+    .menuboard:nth-child(3) .row .price {
+      background-color: #fcd41e;
+      border-radius: 2px;
+      color: black;
+      font-size: 18px; }
   .menuboard .pill {
     color: black;
     background-color: #fcd41e;
@@ -482,6 +509,11 @@ section#main {
     text-align: center;
     font-size: 45px;
     font-family: "ke aloha"; }
+    @media screen and (max-width: 39.9375em) {
+      .menuboard .pill {
+        width: 40px;
+        height: 40px;
+        font-size: 30px; } }
 
 section#practicalInfos iframe {
   width: 100%;
