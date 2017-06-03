@@ -11,17 +11,57 @@ previewImages = document.querySelectorAll('#main figure img'),
 sliderTitleNav = document.querySelectorAll('.slidernav h3'),
 documentWidthEm = document.body.clientWidth / parseFloat(window.getComputedStyle(document.body).fontSize),
 logo = document.querySelector('.logo'),
+right= document.querySelector('.arrowtoright'),
+left= document.querySelector('.arrowtoleft'),
+p=0,
 borderHeight;
 
 // Carousel from values page
+ function navigate(direction){
+  
+  
+  p=p+direction;
+
+  if(direction =-1 && p<0)
+  {
+    p=slides.length-1
+  }
+  if(direction=1 && p>slides.length-1)
+  {
+    p=0;
+  }
+      currentlyActive=document.querySelector('.activeslide');
+      currentlyActive.classList.remove('activeslide');
+      currentlyActive=slides[p];
+      currentlyActive.classList.add('activeslide');
+      slidingarrow.style.left= (100*p)+44 + "%";
+}
+right.addEventListener(
+  'click',
+  function(){
+    
+    navigate(1)
+  }
+);
+left.addEventListener(
+  'click',
+  function(){
+    
+    navigate(-1)
+  }
+);
+
+
+
 for (var i =0; i < sliderImgNav.length;i++) {
   sliderImgNav[i].addEventListener(
     'click',
     function() {
-      var currentlyActive=document.querySelector('.activeslide');
-      currentlyActive.classList.remove('activeslide');
+      p=parseInt(this.getAttribute('data-gotoslide'));
+      currentlyActive=document.querySelector('.activeslide');
+      currentlyActive.classList.remove('activeslide'); 
       slides[this.getAttribute('data-gotoslide')].classList.add('activeslide');
-      slidingarrow.style.left= this.getAttribute('data-movearrow') + "%";
+      slidingarrow.style.left= this.getAttribute('data-movearrow') +"%";
     }
   );
 }
@@ -29,7 +69,8 @@ for (var i =0; i < sliderImgNav.length;i++) {
   sliderTitleNav[i].addEventListener(
     'click',
     function() {
-      var currentlyActive=document.querySelector('.activeslide');
+      p=parseInt(this.getAttribute('data-gotoslide'));
+      currentlyActive=document.querySelector('.activeslide');
       currentlyActive.classList.remove('activeslide');
       slides[this.getAttribute('data-gotoslide')].classList.add('activeslide');
       slidingarrow.style.left= this.getAttribute('data-movearrow') + "%";

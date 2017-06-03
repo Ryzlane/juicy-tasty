@@ -358,7 +358,7 @@ section#main {
       cursor: hand; }
     .values .slidernav .columns p {
       width: 80%;
-      font-size: 12px;
+      font-size: 16px;
       margin: auto;
       display: none;
       text-align: left; }
@@ -384,12 +384,36 @@ section#main {
   @media screen and (max-width: 39.9375em) {
     .values .valueslider {
       display: none; } }
+  .values .valueslider .arrowtoright {
+    border-left: 20px solid #9d2373;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: 8%;
+    top: 40%; }
+    @media screen and (max-width: 63.9375em) {
+      .values .valueslider .arrowtoright {
+        right: 3%; } }
+  .values .valueslider .arrowtoleft {
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #9d2373;
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: 8%;
+    top: 40%; }
+    @media screen and (max-width: 63.9375em) {
+      .values .valueslider .arrowtoleft {
+        left: 3%; } }
   .values .valueslider div.slide {
     display: block;
     position: absolute;
     height: 70%;
     background-color: white;
-    width: 70%;
+    width: 75%;
     margin: auto;
     border-radius: 4px;
     top: 0;
@@ -399,7 +423,9 @@ section#main {
     z-index: -20; }
     @media screen and (max-width: 63.9375em) {
       .values .valueslider div.slide {
-        width: 85%; } }
+        width: 85%;
+        height: 80%;
+        font-size: 14px; } }
     .values .valueslider div.slide .textslide {
       padding-left: 50px; }
     .values .valueslider div.slide.activeslide {
@@ -418,7 +444,10 @@ section#main {
         font-family: "ke aloha";
         margin-top: 10px; }
       .values .valueslider div.slide .columns p {
-        font-size: 13px; }
+        font-size: 16px; }
+        @media screen and (max-width: 63.9375em) {
+          .values .valueslider div.slide .columns p {
+            font-size: 14px; } }
 
 .menuboard {
   color: white;

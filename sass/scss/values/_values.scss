@@ -45,19 +45,19 @@
         cursor: pointer; 
         cursor: hand;
       }
-       p
+      p
       {
 
-      width: 80%;
-      font-size: 12px;
-      margin: auto;
-      display: none;
+        width: 80%;
+        font-size: 16px;
+        margin: auto;
+        display: none;
         text-align: left;
-      @media screen and (max-width: $small-breakpoint) {
+        @media screen and (max-width: $small-breakpoint) {
 
-      display: block;
-    }  
-    }
+          display: block;
+        }  
+      }
 
     }
     .slidingarrow {
@@ -88,9 +88,41 @@
     height:250px;
     padding-top: 25px;
     position: relative;
+
     @media screen and (max-width: $small-breakpoint) {
 
       display: none;
+    }
+    .arrowtoright{
+      border-left: 20px solid $primary-color;
+      border-bottom: 20px solid transparent;
+      border-top: 20px solid transparent;
+
+
+      height:0;
+      width:0;
+      position: absolute;
+      right: 8%;
+      top: 40%;
+      @media screen and (max-width: $medium-breakpoint) {
+
+      right:3%;
+    }
+
+    }
+    .arrowtoleft{
+      border-bottom: 20px solid transparent;
+      border-top: 20px solid transparent;
+      border-right: 20px solid $primary-color;
+      height:0;
+      width:0;
+      position: absolute;
+      left: 8%;
+      top: 40%;
+      @media screen and (max-width: $medium-breakpoint) {
+
+      left:3%;
+    }
     }
 
 
@@ -99,7 +131,7 @@
       position: absolute;
       height:70%;
       background-color: white;
-      width: 70%;
+      width: 75%;
       margin: auto;
       border-radius: 4px;
       top: 0;
@@ -110,22 +142,24 @@
       @media screen and (max-width: $medium-breakpoint) {
 
         width:85%;
+        height: 80%;
+        font-size:14px;
       }
-       .textslide{
-          padding-left:50px;
-          
-        }
+      .textslide{
+        padding-left:50px;
+
+      }
 
 
       &.activeslide{
         z-index:200;
       }
-      
+
       .columns{
         height: 175px;
         position: relative;
-        
-       
+
+
 
         img{
           top:50%;
@@ -143,9 +177,14 @@
 
         }
         p{
-          font-size: 13px;
+          font-size: 16px;
+          @media screen and (max-width: $medium-breakpoint) {
+
+
+            font-size:14px;
+          }
         }
- 
+
 
       }
     }
