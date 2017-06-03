@@ -135,7 +135,7 @@ function updateFigures() {
   }
   // Position logo img
   if (documentWidthEm > 39.9375) {
-    logo.style.left = '0' + previewImages[0].getBoundingClientRect().left + 'px';
+    logo.style.left = '0' + document.querySelector('.row').getBoundingClientRect().left + 'px';
   }
 }
 
