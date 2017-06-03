@@ -438,7 +438,7 @@ section#main {
     @media screen and (max-width: 63.9375em) {
       .values .valueslider div.slide {
         width: 85%;
-        height: 80%;
+        height: 85%;
         font-size: 14px; } }
     .values .valueslider div.slide .textslide {
       padding-left: 50px; }
@@ -458,10 +458,13 @@ section#main {
         font-family: "ke aloha";
         margin-top: 10px; }
       .values .valueslider div.slide .columns p {
+        text-align: left;
+        letter-spacing: 0.7px;
+        font-family: 'Open',sans-serif;
         font-size: 16px; }
         @media screen and (max-width: 63.9375em) {
           .values .valueslider div.slide .columns p {
-            font-size: 14px; } }
+            font-size: 15px; } }
 
 .menuboard {
   color: white;
