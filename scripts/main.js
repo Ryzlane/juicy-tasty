@@ -18,9 +18,7 @@ borderHeight;
 
 // Carousel from values page
  function navigate(direction){
-  
-  
-  p=p+direction;
+   p=p+direction;
 
   if(direction =-1 && p<0)
   {
@@ -50,8 +48,6 @@ left.addEventListener(
     navigate(-1)
   }
 );
-
-
 
 for (var i =0; i < sliderImgNav.length;i++) {
   sliderImgNav[i].addEventListener(

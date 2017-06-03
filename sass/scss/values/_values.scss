@@ -32,9 +32,13 @@
       margin-bottom: 20px;
       position: relative;
       img{
+        transition: 300ms ease;
         margin: auto;
         cursor: pointer; 
         cursor: hand;
+        &:hover { 
+          transform: scale(1.1); 
+        }
 
       }
       h3{
@@ -44,10 +48,11 @@
         text-align: center;
         cursor: pointer; 
         cursor: hand;
+        @media screen and (max-width: $small-breakpoint) {
+          font-size: 1.9375rem
+        }
       }
-      p
-      {
-
+      p{
         width: 80%;
         font-size: 16px;
         margin: auto;
@@ -97,17 +102,21 @@
       border-left: 20px solid $primary-color;
       border-bottom: 20px solid transparent;
       border-top: 20px solid transparent;
-
-
+      transition: 300ms ease;
       height:0;
       width:0;
       position: absolute;
       right: 8%;
       top: 40%;
+      cursor: pointer; 
+      cursor: hand;
+
+      &:hover { transform: scale(1.3); 
+      }
       @media screen and (max-width: $medium-breakpoint) {
 
-      right:3%;
-    }
+        right:3%;
+      }
 
     }
     .arrowtoleft{
@@ -116,13 +125,19 @@
       border-right: 20px solid $primary-color;
       height:0;
       width:0;
+      transition: 300ms ease;
       position: absolute;
       left: 8%;
       top: 40%;
+      cursor: pointer; 
+      cursor: hand;
+      &:hover { transform: scale(1.3); 
+      }
+
       @media screen and (max-width: $medium-breakpoint) {
 
-      left:3%;
-    }
+        left:3%;
+      }
     }
 
 

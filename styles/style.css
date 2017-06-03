@@ -346,9 +346,12 @@ section#main {
     margin-bottom: 20px;
     position: relative; }
     .values .slidernav .columns img {
+      transition: 300ms ease;
       margin: auto;
       cursor: pointer;
       cursor: hand; }
+      .values .slidernav .columns img:hover {
+        transform: scale(1.1); }
     .values .slidernav .columns h3 {
       margin-top: 20px;
       color: #9d2373;
@@ -356,6 +359,9 @@ section#main {
       text-align: center;
       cursor: pointer;
       cursor: hand; }
+      @media screen and (max-width: 39.9375em) {
+        .values .slidernav .columns h3 {
+          font-size: 1.9375rem; } }
     .values .slidernav .columns p {
       width: 80%;
       font-size: 16px;
@@ -388,11 +394,16 @@ section#main {
     border-left: 20px solid #9d2373;
     border-bottom: 20px solid transparent;
     border-top: 20px solid transparent;
+    transition: 300ms ease;
     height: 0;
     width: 0;
     position: absolute;
     right: 8%;
-    top: 40%; }
+    top: 40%;
+    cursor: pointer;
+    cursor: hand; }
+    .values .valueslider .arrowtoright:hover {
+      transform: scale(1.3); }
     @media screen and (max-width: 63.9375em) {
       .values .valueslider .arrowtoright {
         right: 3%; } }
@@ -402,9 +413,14 @@ section#main {
     border-right: 20px solid #9d2373;
     height: 0;
     width: 0;
+    transition: 300ms ease;
     position: absolute;
     left: 8%;
-    top: 40%; }
+    top: 40%;
+    cursor: pointer;
+    cursor: hand; }
+    .values .valueslider .arrowtoleft:hover {
+      transform: scale(1.3); }
     @media screen and (max-width: 63.9375em) {
       .values .valueslider .arrowtoleft {
         left: 3%; } }
