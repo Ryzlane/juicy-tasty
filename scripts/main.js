@@ -1,20 +1,20 @@
 var sliderImgNav=document.querySelectorAll('.slidernav img'),
-currentlyActive=document.querySelector('.activeslide'),
-slides=document.querySelectorAll('.slide'),
-slidingarrow=document.querySelector('.slidingarrow'),
-navbar = document.querySelector('.top-bar'),
-header = document.querySelector('.headerMain'),
-navbarOffset = document.querySelector('header').clientHeight,
-figcaptions = document.querySelectorAll('#main figure p'),
-frames = document.querySelectorAll('#main figure .frame'),
-previewImages = document.querySelectorAll('#main figure img'),
-sliderTitleNav = document.querySelectorAll('.slidernav h3'),
-documentWidthEm = document.body.clientWidth / parseFloat(window.getComputedStyle(document.body).fontSize),
-logo = document.querySelector('.logo'),
-right= document.querySelector('.arrowtoright'),
-left= document.querySelector('.arrowtoleft'),
-p=0,
-borderHeight;
+    currentlyActive=document.querySelector('.activeslide'),
+    slides=document.querySelectorAll('.slide'),
+    slidingarrow=document.querySelector('.slidingarrow'),
+    navbar = document.querySelector('.top-bar'),
+    header = document.querySelector('.headerMain'),
+    navbarOffset = document.querySelector('header').clientHeight,
+    figcaptions = document.querySelectorAll('#main figure p'),
+    frames = document.querySelectorAll('#main figure .frame'),
+    previewImages = document.querySelectorAll('#main figure img'),
+    sliderTitleNav = document.querySelectorAll('.slidernav h3'),
+    documentWidthEm = document.body.clientWidth / parseFloat(window.getComputedStyle(document.body).fontSize),
+    logo = document.querySelector('.logo'),
+    right= document.querySelector('.arrowtoright'),
+    left= document.querySelector('.arrowtoleft'),
+    p=0,
+    borderHeight;
 
 // Carousel from values page
 
@@ -61,7 +61,7 @@ for (var i =0; i < sliderImgNav.length;i++) {
   );
 }
 
-for (var i =0; i < sliderImgNav.length;i++) {
+for (var i =0; i < sliderTitleNav.length;i++) {
   sliderTitleNav[i].addEventListener(
     'click',
     function() {
@@ -70,6 +70,41 @@ for (var i =0; i < sliderImgNav.length;i++) {
       currentlyActive.classList.remove('activeslide');
       slides[this.getAttribute('data-gotoslide')].classList.add('activeslide');
       slidingarrow.style.left= this.getAttribute('data-movearrow') + "%";
+    }
+
+  );
+}
+for (var i =0; i < sliderImgNav.length;i++) {
+  sliderImgNav[i].addEventListener(
+    'mouseover',
+    function() {
+      sliderImgNav[this.getAttribute('data-gotoslide')].style.transform="scale(1.15)";
+    }
+
+  );
+}
+for (var i =0; i < sliderImgNav.length;i++) {
+  sliderImgNav[i].addEventListener(
+    'mouseleave',
+    function() {
+      sliderImgNav[this.getAttribute('data-gotoslide')].style.transform="scale(1.0)";
+    }
+  );
+}
+for (var i =0; i < sliderTitleNav.length;i++) {
+  sliderTitleNav[i].addEventListener(
+    'mouseover',
+    function() {
+      sliderImgNav[this.getAttribute('data-gotoslide')].style.transform="scale(1.15)";
+    }
+
+  );
+}
+for (var i =0; i < sliderTitleNav.length;i++) {
+  sliderTitleNav[i].addEventListener(
+    'mouseleave',
+    function() {
+      sliderImgNav[this.getAttribute('data-gotoslide')].style.transform="scale(1.0)";
     }
   );
 }

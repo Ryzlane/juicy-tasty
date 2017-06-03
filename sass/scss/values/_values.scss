@@ -36,9 +36,7 @@
         margin: auto;
         cursor: pointer; 
         cursor: hand;
-        &:hover { 
-          transform: scale(1.1); 
-        }
+       
 
       }
       h3{
@@ -51,6 +49,7 @@
         @media screen and (max-width: $small-breakpoint) {
           font-size: 1.9375rem
         }
+      
       }
       p{
         width: 80%;

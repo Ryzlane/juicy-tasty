@@ -350,8 +350,6 @@ section#main {
       margin: auto;
       cursor: pointer;
       cursor: hand; }
-      .values .slidernav .columns img:hover {
-        transform: scale(1.1); }
     .values .slidernav .columns h3 {
       margin-top: 20px;
       color: #9d2373;
