@@ -126,13 +126,13 @@ nav {
 .menu-icon {
   float: right; }
 
-a {
+nav a {
   text-decoration: none;
   color: #ffffff;
   padding: 40px 30px;
   text-transform: uppercase;
   transition: all 0.3s ease; }
-  a:hover {
+  nav a:hover {
     background: #ffffff;
     color: #9d2373; }
 
@@ -325,7 +325,7 @@ section#main {
 
 .values p:first-child, .values .outrotext {
   color: black;
-  font-family: 'Open',sans-serif;
+  font-family: 'Open Sans',sans-serif;
   text-align: center;
   width: 40%;
   margin: auto;
@@ -440,6 +440,12 @@ section#main {
         width: 85%;
         height: 85%;
         font-size: 14px; } }
+    .values .valueslider div.slide a {
+      padding: 0;
+      margin: 0;
+      color: #9d2373;
+      text-decoration: none;
+      text-transform: uppercase; }
     .values .valueslider div.slide .textslide {
       padding-left: 50px; }
     .values .valueslider div.slide.activeslide {
@@ -460,7 +466,7 @@ section#main {
       .values .valueslider div.slide .columns p {
         text-align: left;
         letter-spacing: 0.7px;
-        font-family: 'Open',sans-serif;
+        font-family: 'Open Sans',sans-serif;
         font-size: 16px; }
         @media screen and (max-width: 63.9375em) {
           .values .valueslider div.slide .columns p {
