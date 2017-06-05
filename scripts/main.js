@@ -142,7 +142,7 @@ function updateFigures() {
     } else {
       logo.style.left = '20px';
     }
-    document.querySelector('.subHeader .top-bar').classList.add('sticky');
+    document.querySelector('header .top-bar').classList.add('sticky');
   }
 }
 
