@@ -13,6 +13,7 @@ var sliderImgNav=document.querySelectorAll('.slidernav img'),
     logo = document.querySelector('.logo'),
     right= document.querySelector('.arrowtoright'),
     left= document.querySelector('.arrowtoleft'),
+    row = document.querySelector('.row'),
     p=0,
     borderHeight;
 
@@ -136,13 +137,15 @@ function updateFigures() {
   }
   // Position logo img
   if (documentWidthEm > 39.9375) {
-    logo.style.left = '0' + document.querySelector('.row').getBoundingClientRect().left + 'px';
+    logo.style.left = '0' + row.getBoundingClientRect().left + 'px';
   }
 }
 
 updateFigures();
 
 window.onresize = function() {
-  documentWidthEm = document.body.clientWidth / parseFloat(window.getComputedStyle(document.body).fontSize);
+  documentWidthEm = document.body.clientWidth / parseFloat(
+    window.getComputedStyle(document.body).fontSize
+  );
   updateFigures();
 }

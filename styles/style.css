@@ -1,6 +1,10 @@
 footer {
   background-color: #fff;
   margin-top: 60px; }
+  footer > p {
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 0; }
 
 .footerimg {
   background-image: url("../images/salades-vegan.jpg");
@@ -43,23 +47,42 @@ a.footerbutton {
     background: #9d2373; }
 
 .footertext {
-  padding: 40px 0; }
-
-.footertext .columns div {
-  color: black;
-  font-weight: 500;
-  font-size: 12px;
-  width: 190px;
-  margin: auto;
-  padding-left: 0px;
-  font-size: 16px; }
+  padding: 40px 0;
+  text-align: center; }
+  .footertext .columns p {
+    color: #9d2373;
+    font-weight: 700; }
+    @media screen and (max-width: 39.9375em) {
+      .footertext .columns p {
+        margin-bottom: 5px; } }
   @media screen and (max-width: 39.9375em) {
-    .footertext .columns div {
-      padding-left: 30px; } }
+    .footertext .columns:not(:first-child) p {
+      margin-top: 10px; } }
+  .footertext .columns a {
+    display: block;
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+    width: 190px;
+    margin: auto;
+    padding-left: 0px;
+    font-size: 16px; }
 
-.footertext .columns div:first-child {
-  color: #9d2373;
-  font-weight: 700; }
+.contact div {
+  text-align: center;
+  margin-bottom: 40px; }
+  @media screen and (max-width: 39.9375em) {
+    .contact div {
+      margin-bottom: 20px; } }
+  .contact div img {
+    height: 30px;
+    width: 30px; }
+  .contact div p {
+    display: inline;
+    color: #000;
+    margin-left: 4px; }
+  .contact div:hover a {
+    text-decoration: underline; }
 
 @media screen and (max-width: 39.9375em) {
   .bloc {
