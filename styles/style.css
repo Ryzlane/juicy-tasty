@@ -384,7 +384,8 @@ section#main {
       margin: auto;
       cursor: pointer;
       cursor: hand;
-      height: 300px; }
+      height: 220px;
+      width: 220px; }
     .values .slidernav .columns h3 {
       margin-top: 20px;
       color: #9d2373;
