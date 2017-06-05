@@ -516,9 +516,12 @@ section#main {
   background: url("../images/ardoise.jpg");
   background-size: cover;
   position: relative; }
+  .menuboard:nth-child(1) p {
+    height: 80px; }
   .menuboard h2 {
     text-align: center;
-    font-family: "ke aloha"; }
+    font-family: "ke aloha";
+    margin-bottom: 10px; }
     @media screen and (max-width: 39.9375em) {
       .menuboard h2 {
         font-size: 1.4rem; } }
@@ -534,8 +537,7 @@ section#main {
     font-family: 'Open',sans-serif; }
     .menuboard .columns p {
       margin-bottom: 10px;
-      font-weight: 400;
-      height: 80px; }
+      font-weight: 400; }
       @media screen and (max-width: 39.9375em) {
         .menuboard .columns p {
           font-size: 12px; } }

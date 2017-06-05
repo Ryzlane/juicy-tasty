@@ -7,10 +7,14 @@
   background: url('../images/ardoise.jpg');
   background-size: cover;
   position: relative;
+  &:nth-child(1) p{
+    height: 80px;
+  }
     
   h2{
     text-align: center;
     font-family: "ke aloha";
+    margin-bottom: 10px;
     @media screen and (max-width: $small-breakpoint){
       font-size:1.4rem;
     }
@@ -33,7 +37,7 @@
     p{
       margin-bottom: 10px;
       font-weight: 400;
-      height: 80px;
+      
       @media screen and (max-width: $small-breakpoint){
       font-size:12px;
       
