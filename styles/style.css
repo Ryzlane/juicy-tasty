@@ -383,7 +383,8 @@ section#main {
       transition: 300ms ease;
       margin: auto;
       cursor: pointer;
-      cursor: hand; }
+      cursor: hand;
+      height: 300px; }
     .values .slidernav .columns h3 {
       margin-top: 20px;
       color: #9d2373;
