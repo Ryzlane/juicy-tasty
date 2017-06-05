@@ -1,8 +1,5 @@
-
-
-
-
 .values {
+
   p:first-child, .outrotext{
     color: black;
     font-family: 'Open Sans',sans-serif;
@@ -13,46 +10,43 @@
     font-weight: 400;
     margin-top: 30px;
     @media screen and (max-width: $medium-breakpoint) {
-
       width:60%;
     }
     @media screen and (max-width: $small-breakpoint) {
 
       width:80%;
     }
-
   }
   .slidernav{
     margin-top: 50px;
     background-color: none;
 
-
     .columns{
       text-align: center;
       margin-bottom: 20px;
       position: relative;
-      img{
+
+      img {
         transition: 300ms ease;
         margin: auto;
-        cursor: pointer; 
+        cursor: pointer;
         cursor: hand;
         height: 220px;
         width: 220px;
-
-
       }
+
       h3{
         margin-top: 20px;
         color:$primary-color;
         font-family: "ke aloha";
         text-align: center;
-        cursor: pointer; 
+        cursor: pointer;
         cursor: hand;
         @media screen and (max-width: $small-breakpoint) {
           font-size: 1.9375rem
         }
-
       }
+
       p{
         width: 80%;
         font-size: 16px;
@@ -62,44 +56,35 @@
         @media screen and (max-width: $small-breakpoint) {
 
           display: block;
-        }  
+        }
       }
-
     }
+
     .slidingarrow {
-
-
       border-bottom: 20px solid $secondary-color;
       border-left: 20px solid transparent;
-
       border-right: 20px solid transparent;
       height:0;
       width:0;
       position: absolute;
-      left:44%;  
-
+      left:44%;
       @media screen and (max-width: $small-breakpoint) {
         display: none;
       }
-
-
-
     }
-
   }
 
   .valueslider{
     background-color:$secondary-color;
-
     height:250px;
     padding-top: 25px;
     position: relative;
 
     @media screen and (max-width: $small-breakpoint) {
-
       display: none;
     }
-    .arrowtoright{
+
+    .arrowtoright {
       border-left: 20px solid $primary-color;
       border-bottom: 20px solid transparent;
       border-top: 20px solid transparent;
@@ -109,17 +94,18 @@
       position: absolute;
       right: 8%;
       top: 40%;
-      cursor: pointer; 
+      cursor: pointer;
       cursor: hand;
 
-      &:hover { transform: scale(1.3); 
+      &:hover {
+        transform: scale(1.3);
       }
-      @media screen and (max-width: $medium-breakpoint) {
 
+      @media screen and (max-width: $medium-breakpoint) {
         right:3%;
       }
-
     }
+
     .arrowtoleft{
       border-bottom: 20px solid transparent;
       border-top: 20px solid transparent;
@@ -130,17 +116,16 @@
       position: absolute;
       left: 8%;
       top: 40%;
-      cursor: pointer; 
+      cursor: pointer;
       cursor: hand;
-      &:hover { transform: scale(1.3); 
+      &:hover {
+        transform: scale(1.3);
       }
 
       @media screen and (max-width: $medium-breakpoint) {
-
         left:3%;
       }
     }
-
 
     div.slide{
       display: block;
@@ -156,11 +141,11 @@
       right: 0;
       z-index: -20;
       @media screen and (max-width: $medium-breakpoint) {
-
         width:85%;
         height: 85%;
         font-size:14px;
       }
+
       a{
         padding: 0;
         margin: 0;
@@ -168,11 +153,10 @@
         text-decoration: none;
         text-transform: uppercase;
       }
+
       .textslide{
         padding-left:50px;
-
       }
-
 
       &.activeslide{
         z-index:200;
@@ -182,39 +166,30 @@
         height: 175px;
         position: relative;
 
-
-
         img{
           top:50%;
           transform: translateY(-50%);
           position: absolute;
           min-height: 120px;
           min-width: 120px;
-
-
         }
+
         h3{
           color:$primary-color;
           font-family: "ke aloha";
           margin-top: 10px;
-
         }
+
         p{
           text-align: left;
           letter-spacing: 0.7px;
           font-family: 'Open Sans',sans-serif;
           font-size: 16px;
           @media screen and (max-width: $medium-breakpoint) {
-
-
             font-size:15px;
           }
-
         }
-
-
       }
     }
   }
 }
-
