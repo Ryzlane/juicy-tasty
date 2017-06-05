@@ -124,7 +124,11 @@ nav {
       color: white;
       line-height: 34px;
       padding: 0px 40px 0px 40px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-align: center; }
+      @media screen and (min-width: 39.9375em) {
+        .top-bar ul li a {
+          text-align: left; } }
       @media screen and (min-width: 1130px) {
         .top-bar ul li a {
           margin: 0 20px; } }
@@ -134,7 +138,7 @@ nav {
 .title-bar {
   background-color: #9d2373;
   border-bottom: 3px solid #fcd41e;
-  height: 35px; }
+  height: 45px; }
 
 .top-bar.sticky, .title-bar.sticky {
   position: fixed;
@@ -144,10 +148,14 @@ nav {
   z-index: 0; }
 
 .title-bar-title {
-  margin-top: -12px; }
+  margin-top: 0px; }
+  .title-bar-title a {
+    text-transform: none;
+    padding: 0; }
 
 .menu-icon {
-  float: right; }
+  float: right;
+  margin-top: 5px; }
 
 nav a {
   text-decoration: none;
@@ -236,11 +244,14 @@ nav a {
 
 header.subHeader {
   height: 270px;
-  margin-top: 13px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   background: url("../images/repas-vegan-complet.jpg");
   background-size: cover;
   position: relative; }
+  @media screen and (min-width: 39.9375em) {
+    header.subHeader {
+      margin-top: 37px;
+      margin-bottom: 25px; } }
   header.subHeader:before {
     content: '';
     position: absolute;

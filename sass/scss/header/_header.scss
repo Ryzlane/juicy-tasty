@@ -84,11 +84,14 @@
 
 header.subHeader {
   height: 270px;
-  margin-top: 13px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   background: url('../images/repas-vegan-complet.jpg');
   background-size: cover;
   position: relative;
+  @media screen and (min-width: $small-breakpoint) {
+    margin-top: 37px;
+    margin-bottom: 25px;
+  }
 
   &:before {
     content: '';

@@ -13,7 +13,6 @@
     left:50px;
     transform: translateX(0);
   }
-  // 770
 }
 
 nav{
@@ -43,13 +42,16 @@ nav{
       line-height: 34px;
       padding: 0px 40px 0px 40px;
       text-transform: uppercase;
+      text-align: center;
+      @media screen and (min-width: $small-breakpoint) {
+        text-align: left;
+      }
 
       @media screen and (min-width: 1130px) {
         margin: 0 20px;
       }
 
       &:hover {
-        
         color: $primary-color;
       }
     }
@@ -59,7 +61,7 @@ nav{
 .title-bar{
   background-color: #9d2373;
   border-bottom: 3px solid $secondary-color;
-  height: 35px;
+  height: 45px;
 }
 
 .top-bar.sticky, .title-bar.sticky {
@@ -71,11 +73,16 @@ nav{
 }
 
 .title-bar-title {
-  margin-top: -12px;
+  margin-top: 0px;
+  a {
+    text-transform: none;
+    padding: 0;
+  }
 }
 
 .menu-icon{
   float:right;
+  margin-top: 5px;
 }
 
 nav a {

@@ -18,7 +18,6 @@ var sliderImgNav=document.querySelectorAll('.slidernav img'),
     borderHeight;
 
 // navigate carousel with side arrows
-
 function navigate(direction) {
   p+=direction;
   if (direction =-1 && p<0) {
@@ -48,6 +47,7 @@ if (right != null) {
     }
   );
 }
+
 //update activeslide class to display chosen slide
 for (var i =0; i < sliderImgNav.length;i++) {
   sliderImgNav[i].addEventListener(
@@ -66,17 +66,17 @@ for (var i =0; i < sliderTitleNav.length;i++) {
   sliderTitleNav[i].addEventListener(
     'click',
     function() {
-      p=parseInt(this.getAttribute('data-gotoslide'));
-      currentlyActive=document.querySelector('.activeslide');
+      p = parseInt(this.getAttribute('data-gotoslide'));
+      currentlyActive = document.querySelector('.activeslide');
       currentlyActive.classList.remove('activeslide');
       slides[this.getAttribute('data-gotoslide')].classList.add('activeslide');
-      slidingarrow.style.left= this.getAttribute('data-movearrow') + "%";
+      slidingarrow.style.left = this.getAttribute('data-movearrow') + "%";
     }
-
   );
 }
+
 //scale up img on mouseover
-for (var i =0; i < sliderImgNav.length;i++) {
+for (var i=0; i < sliderImgNav.length;i++) {
   sliderImgNav[i].addEventListener(
     'mouseover',
     function() {
@@ -137,7 +137,12 @@ function updateFigures() {
   }
   // Position logo img
   if (documentWidthEm > 39.9375) {
-    logo.style.left = '0' + row.getBoundingClientRect().left + 'px';
+    if (row.getBoundingClientRect().left > 0) {
+      logo.style.left = '0' + row.getBoundingClientRect().left + 'px';
+    } else {
+      logo.style.left = '20px';
+    }
+    document.querySelector('.subHeader .top-bar').classList.add('sticky');
   }
 }
 
