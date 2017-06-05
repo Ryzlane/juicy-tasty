@@ -530,18 +530,12 @@ section#main {
     @media screen and (max-width: 39.9375em) {
       .menuboard h3 {
         font-size: 1.2rem; } }
-  .menuboard .separator {
-    width: 3px;
-    height: 200px;
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px; }
   .menuboard .columns {
     font-family: 'Open',sans-serif; }
     .menuboard .columns p {
       margin-bottom: 10px;
-      font-weight: 400; }
+      font-weight: 400;
+      height: 80px; }
       @media screen and (max-width: 39.9375em) {
         .menuboard .columns p {
           font-size: 12px; } }
