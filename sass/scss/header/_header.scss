@@ -113,3 +113,21 @@ header.subHeader {
     position: relative;
   }
 }
+
+header.subHeader.practicalInfos {
+  background: url(../images/vitrine.jpg);
+  background-size: cover;
+  background-position: 0% 20%;
+}
+
+header.subHeader.menu {
+  background: url(../images/veggieBalls.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+header.subHeader.values {
+  background: url(../images/wrap-vegan-gyros.jpg);
+  background-size: cover;
+  background-position: center;
+}
