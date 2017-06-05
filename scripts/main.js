@@ -16,7 +16,7 @@ var sliderImgNav=document.querySelectorAll('.slidernav img'),
     p=0,
     borderHeight;
 
-// Carousel from values page
+// navigate carousel with side arrows
 
 function navigate(direction) {
   p+=direction;
@@ -47,7 +47,7 @@ if (right != null) {
     }
   );
 }
-
+//update activeslide class to display chosen slide
 for (var i =0; i < sliderImgNav.length;i++) {
   sliderImgNav[i].addEventListener(
     'click',
@@ -74,6 +74,7 @@ for (var i =0; i < sliderTitleNav.length;i++) {
 
   );
 }
+//scale up img on mouseover
 for (var i =0; i < sliderImgNav.length;i++) {
   sliderImgNav[i].addEventListener(
     'mouseover',
