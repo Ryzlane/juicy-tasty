@@ -15,6 +15,7 @@ var sliderImgNav=document.querySelectorAll('.slidernav img'),
     left= document.querySelector('.arrowtoleft'),
     row = document.querySelector('.row'),
     p=0,
+    subHeader=document.querySelector('.subHeader'),
     borderHeight;
 
 // navigate carousel with side arrows
@@ -115,8 +116,9 @@ for (var i =0; i < sliderTitleNav.length;i++) {
 document.addEventListener('scroll', function() {
   // only apply if on landing page
   if (header != null) {
+    
     navbarOffset = header.clientHeight;
-    if (window.pageYOffset + 3 > navbarOffset) {
+    if (window.pageYOffset + 3> navbarOffset) {
       navbar.classList.add('sticky');
     } else {
       navbar.classList.remove('sticky');
@@ -137,12 +139,10 @@ function updateFigures() {
   }
   // Position logo img
   if (documentWidthEm > 39.9375) {
-    if (row.getBoundingClientRect().left > 0) {
-      logo.style.left = '0' + row.getBoundingClientRect().left + 'px';
-    } else {
-      logo.style.left = '20px';
+    
+    if (subHeader != null){
+    document.querySelector('.subHeader .top-bar').classList.add('sticky');
     }
-    document.querySelector('header .top-bar').classList.add('sticky');
   }
 }
 
