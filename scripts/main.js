@@ -2,7 +2,7 @@ var sliderImgNav=document.querySelectorAll('.slidernav img'),
     currentlyActive=document.querySelector('.activeslide'),
     slides=document.querySelectorAll('.slide'),
     slidingarrow=document.querySelector('.slidingarrow'),
-    navbar = document.querySelector('.top-bar'),
+    navbar = document.querySelector('.headerMain .top-bar'),
     header = document.querySelector('.headerMain'),
     navbarOffset = document.querySelector('header').clientHeight,
     figcaptions = document.querySelectorAll('#main figure p'),
@@ -142,6 +142,12 @@ function updateFigures() {
     
     if (subHeader != null){
     document.querySelector('.subHeader .top-bar').classList.add('sticky');
+    }
+  }
+   if (documentWidthEm < 39.9375) {
+    
+    if (subHeader != null){
+    document.querySelector('.subHeader .top-bar').classList.remove('sticky');
     }
   }
 }
