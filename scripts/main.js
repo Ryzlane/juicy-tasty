@@ -152,7 +152,8 @@ function updateFigures() {
   }
 }
 
-updateFigures();
+// wait for images to load
+setTimeout(updateFigures, 100);
 
 window.onresize = function() {
   documentWidthEm = document.body.clientWidth / parseFloat(
